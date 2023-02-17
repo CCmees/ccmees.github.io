@@ -1,0 +1,105 @@
+= Õpetused ja reeglid meeskonnale
+
+== Üldised reeglid
+. Kõikide meeskonnavestlusega seotud kanalite sisu leakimine(näitamine/saatmine jne) kõrvalistele isikutele on rangelt keelatud. Kaasaarvatud serverisiseste adminchattide sisud! +
+
+. Oma privileegide ära kasutamine serveris ning discordis on keelatud!
+. Kaasmeeskonnaliikmetega draamasid ei tekita! Kui mingeid probleeme tekib, siis proovige rahulikult lahenduseni jõuda või pöörduge juhtkonna poole!
+. Ärge sekkuge teid mittepuudutavatesse jamadesse/draamadesse!
+. Kui alkoholi joote, siis palun võtke õhtu(või muu periood päevast) vabaks ning ärge serverisse ronige!
+. Kui peate isiklikel põhjustel serverist kauem kui 2 päeva eemal olema, siis palun tehke postitus ka eemalolekud-kohustuslik-täita   kanalisse!
+. Serveris pikemat afkimist palun vältida! Kui lähete korraks võileiba tegema vms, siis võib paar minutit eemal olla, aga kui lähete kauemaks eemale, siis lahkuge serverist!
+. Prottide flagid: meeskond paneb peamiselt greeting, farewell ja pvp flagi peale. Teisi flage, nagu näiteks mob-damage, tnt, mob-spawning, võidakse panna siis peale, kui inimesel on warp seal kohas olemas, et tagada kaasmängijate turvalisus.
+. Kui keegi kasutab abistavaid programme, siis kindlasti salvestage väike videoklipike, kus on näha, kuidas inimene neid kasutab. Unban avalduse või kaebuse korral on raske sõna-sõna vastu vaielda. Salvestada saab näiteks programmidega OBS,  Nvidia Shadowplay, Windowsi kasutajatel klahvikombinatsioon Win + G. 
+. Kirjakasti reeglid, mis kehtivad mängus, kehtivad ka Discordi live-chati kanalites (see läheb ikkagi serverisse). Nendes tuleb ikkagi jälgida oma sõnavara.
+. Pole otseselt reegel, kui keegi hakkab jututoas kellelegi kaebust tegema, siis suuna ta 📌abi-info  kanalisse ja las avab ticketi. Ticketis on parem lahendada seda olukorda. 
+
+
+
+== Discord
+
+== Mängusisesed käsklused
+=== Karistamine
+|===
+|Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus|
+| /warn | Kasutajanimi | Põhjus | |[blue]=Valvur+=|Kasutaja saab hoiatuse, mis püsib aktiivsena 7 päeva. Kui inimesel on korraga 3 aktiivset hoiatust, ja saab neljanda hoiatuse, siis server automaatselt kickib. Järgmisel karistusel tuleb juba 24h blokeering.|
+| /kick | Kasutajanimi | Põhjus | |[blue]=Valvur+=|Viskab mängija serverist välja|
+| /tempmute| Kasutajanimi | Aeg | Põhjus | [blue]=Valvur+=|Vaigistab mängija ajutiselt. Mängija ei saa saata sõnumeid kirjakasti.|
+| /tempban | Kasutajanimi| Aeg | Põhjus | [aqua]=Abistaja+=|Blokeerib mängija ajutiselt serverist.|
+| /tempbanip | Kasutajanimi| Aeg | Põhjus | [green]=Mod+=|Blokeerib mängija IP ajutiselt serverist.|
+| /ban | Kasutajanimi | Põhjus|| [red]=Admin+=|Blokeerib mängija serverist igaveseks.|
+|===
+
+=== Muud käsklused
+
+|===
+|Käsu nimi| Informatsioon|Nõutav rank|
+|vanish | Saab minna mängijate eest nähtamatuks| [blue]#Valvur+#|
+|/silentchest | Saab kirste avada vaikselt | [blue]#Valvur+#|
+|/signspy | Kuvab mängijate siltidele kirjutatud sisu | [blue]#Valvur+#|
+|/god | Muutud surematuks. NB! Kasutada võib ainult meeskonnakohustusi täites |[aqua]#Abistaja+#||
+|/backpack | Saad näha teiste mängijate seljakotte |[aqua]#Abistaja+#|
+|/invsee | Saad vaadata teiste mängijate seljakotte | [aqua]#Abistaja+#|
+|/tp | Saad teleporteeruda teiste juurde ilma ajata | [aqua]#Abistaja+#|
+|/commandspy | Saad nähe üksikuid käsklusi, mida mängijad jooksutavad |[green]#Mod+#|
+|/homes | Saad näha teiste mängijate kodusi ja nendesse teleporteeruda | [green]#Mod+#|
+|/enderchest | Saad avada ja muuta teiste mängijate enderchesti |[green]#Mod+#|
+|/tppos (X,Y,Z)| Saad teleporteeruda kindlatele koordinaatidele| [green]#Mod+#|
+|/clear | Kustutab mängija seljakoti sisu |[red]#Admin+#|
+|/setwarp | Saad panna warpi (juhend allpool)|[red]#Admin+#|
+|/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu |[maroon]#Vanem-Admin+#|
+|===
+
+=== Warpi panemise juhend
+
+. Suundu soovitud koordinaatidele, näiteks käsuga `/tppos`
+. Vaata õiges suunas
+. Kasuta käsku `/setwarp warpinimi`
+. Seejärel avaneb järgmine menüü
+
+image::Images/Warp1.png[Warp picture]
+
+.. Ikooni muutmiseks peab antud ese olema Sul inventorys. Võtad selle kätte ja vajutad üles paremasse nurka sellega, seal kus asub white carpet.
+. Olen teinud nii, et hoian `/warp` menüüs serveri enda warpe(pood ja vote) esimestena. Et muuta loodud warpi asukohta, selleks vajuta pruuni villa peale, nii nagu pildil kujutatud on.
+
+image::Images/Warp2.png[Warp picture]
+
+. Ja ongi kõik!
+
+=== Warpi asukoha ja ikooni muutmine
+
+. Kas sina oled selle warpi pannud? Veenduda saad nii, et kirjutad `/warp`, hõljud hiirega olemasoleva warpi kohal ja tuleb tekst "Klikk rullikule, et muuta" +
+
+image::Images/Warp3.png[Warp change]
+
+. Kui sa oled selle warpi pannud, siis ikooni saab muuta samamoodi nagu alguses sai pandud. 
+. Asukoha muutmiseks tuleb uute asukohta minna, seejärel kas lähed uuesti `/warp` ja vajutad rullikuga, või kirjutad `/editwarp warpinimi`.
+.. Siis pead vajutama hiirega puidust pulga peale.
+
+image::Images/Warp4.png[Warp pos change]
+
+
+. Kui sa ei ole seda warpi pannud, siis tuleb olemasolev warp ära kustutada käsuga `/delwarp nimi` ja uuesti warp panna.
+
+
+=== Rollbackimine
+
+* Rollbackimine on suureks abiks, kui kedagi on griifitud. +
+
+Rollbackida saab suhteliselt lihtsalt käsuga `/co rb`. +
+Antud käsklus nõuab lisaparameetreid. Nendeks on `time:`, kuhu tuleb panna kui kaua aega tagasi peab rollbackima. Seejärel ka `radius:`. Sellega tuleb täpsustada kui suures raadiuses sinust hakatakse rollbackima. +
+
+Sellega said kohustuslikud parameetrid otsa, kuid on palju veel, millega saab elu lihtsamaks teha.
+
+* `user:` Selle järel paned kasutajanime ja rollbackitakse ainult tema lõhutud/võetud esemed
+* `include:` Saab rollbackida ainult kindlat blocki
+* `exclude:` Saab rollbackimisest välja jätta kindlad blockid
+* `action:` Saab rollbackida ainult kindlat tegevust. Näiteks blocki lõhkumist või chestist mingi eseme võtmise.
+
+=== Info otsimine
+
+* Infot saab kiiresti otsida käsklusega `/co lookup`
+Sellel käsul on samasugused parameetrid, nagu `/co rb` käsul.
+
+
+
