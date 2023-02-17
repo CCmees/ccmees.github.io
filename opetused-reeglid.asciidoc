@@ -16,7 +16,11 @@
 
 
 
-== Discord
+== Discordi käsklused
+
+|===
+|Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus|
+|===
 
 == Mängusisesed käsklused
 === Karistamine
@@ -37,7 +41,7 @@
 |vanish | Saab minna mängijate eest nähtamatuks| [blue]#Valvur+#|
 |/silentchest | Saab kirste avada vaikselt | [blue]#Valvur+#|
 |/signspy | Kuvab mängijate siltidele kirjutatud sisu | [blue]#Valvur+#|
-|/god | Muutud surematuks. NB! Kasutada võib ainult meeskonnakohustusi täites |[aqua]#Abistaja+#||
+|/god | Muutud surematuks. NB! Kasutada võib ainult meeskonnakohustusi täites |[aqua]#Abistaja+#|
 |/backpack | Saad näha teiste mängijate seljakotte |[aqua]#Abistaja+#|
 |/invsee | Saad vaadata teiste mängijate seljakotte | [aqua]#Abistaja+#|
 |/tp | Saad teleporteeruda teiste juurde ilma ajata | [aqua]#Abistaja+#|
@@ -47,7 +51,7 @@
 |/tppos (X,Y,Z)| Saad teleporteeruda kindlatele koordinaatidele| [green]#Mod+#|
 |/clear | Kustutab mängija seljakoti sisu |[red]#Admin+#|
 |/setwarp | Saad panna warpi (juhend allpool)|[red]#Admin+#|
-|/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu |[maroon]#Vanem-Admin+#|
+|/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu|[maroon]#Vanem-Admin+#|
 |===
 
 === Warpi panemise juhend
