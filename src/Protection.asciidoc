@@ -61,7 +61,7 @@ image::images/Protection/Set.png[Graafiline liides]
 
 image::images/Protection/sisenemistekst.png[Sisenemistekst]
 
-* Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/res message CCmees leave Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst.
+* Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/res message CCmees leave Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst: +
 
 image::images/Protection/lahkumistekst.png[Lahkumistekst]
 
