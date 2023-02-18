@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.16">
-<title>Ala panek Kännuka serveris</title>
+<title>Kaitseala panemine Kännuka serveris</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -439,9 +439,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Ala panek Kännuka serveris</h1>
+<h1>Kaitseala panemine Kännuka serveris</h1>
 <div id="toc" class="toc">
-<div id="toctitle">Table of Contents</div>
+<div id="toctitle">Sisukord</div>
 <ul class="sectlevel1">
 <li><a href="#_informatsioon">Informatsioon</a></li>
 <li><a href="#_ala_panemine">Ala panemine</a></li>
@@ -449,6 +449,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_käsureal_flag_ide_muutmine">Käsureal <em>flag</em>-ide muutmine</a></li>
 <li><a href="#_graafilise_liidesega_flag_ide_muutmine">Graafilise liidesega <em>flag</em>-ide muutmine</a></li>
+<li><a href="#_ala_sisenemis_ja_lahkumisteksti_muutmine">Ala sisenemis- ja lahkumisteksti muutmine</a></li>
 </ul>
 </li>
 <li><a href="#_ala_suurendamine">Ala suurendamine</a>
@@ -513,21 +514,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Suundud teise posti juurde, vajutad kõplaga posti peale parema klikiga
-image::Images/Protection/</p>
-</li>
-<li>
-<p>Nagu pildil näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: <code>/res create alanimi</code>. <strong>NB</strong> Alanime asemele kirjuta oma soovitud ala nimi.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Näiteks: <code>/res create CCmees</code>. Loob mulle privaatse ala nende kahe posti vahel</p>
+<p>Suundud teise posti juurde, vajutad kõplaga posti peale parema klikiga</p>
 </li>
 </ul>
 </div>
@@ -535,10 +522,40 @@ image::Images/Protection/</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>image::Images/Protection/
-* Nüüd ongi sinu personaalne ala olemas!
-* Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust <code>/res padd alanimi inimesenimi</code>, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
-* Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus <code>/res pdel alanimi inimesenimi</code>.</p>
+<p>image::images/Protection/</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nagu pildil näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: <code>/res create alanimi</code>. <strong>NB</strong> Alanime asemele kirjuta oma soovitud ala nimi.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Näiteks: <code>/res create CCmees</code>. Loob mulle privaatse ala nende kahe posti vahel</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>image::images/Protection/</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nüüd ongi sinu personaalne ala olemas!</p>
+</li>
+<li>
+<p>Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust <code>/res padd alanimi inimesenimi</code>, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.</p>
+</li>
+<li>
+<p>Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus <code>/res pdel alanimi inimesenimi</code>.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -596,13 +613,27 @@ image::Images/Protection/</p>
 <p>Selleks pead olema oma alas sees, seejärel kirjutama käsu <code>/res set</code></p>
 </li>
 <li>
-<p>Siis avaneb menüü, kus saad hiirega lugeda, mida iga <em>flag</em> teeb. Kui soovid mingit <em>flag</em>-i alal peale panna, siis tuleb hiirega teha vasakklikk selle peale.
-image::Images/Protection/Set.png[Graafiline liides]</p>
+<p>Siis avaneb menüü, kus saad hiirega lugeda, mida iga <em>flag</em> teeb. Kui soovid mingit <em>flag</em>-i alal peale panna, siis tuleb hiirega teha vasakklikk selle peale.</p>
 </li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/Protection/Set.png" alt="Graafiline liides">
+</div>
+</div>
+<div class="ulist">
+<ul>
 <li>
-<p>Nagu pildil näha on, siis alas helendab nüüd mul. See tähendab seda, et antud <em>flag</em> on nüüd peal ja kõik saavad minu alasit kasutada
-=== Ala sisenemis- ja lahkumisteksti muutmine</p>
+<p>Nagu pildil näha on, siis alas helendab nüüd mul. See tähendab seda, et antud <em>flag</em> on nüüd peal ja kõik saavad minu alasit kasutada</p>
 </li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ala_sisenemis_ja_lahkumisteksti_muutmine">Ala sisenemis- ja lahkumisteksti muutmine</h3>
+<div class="ulist">
+<ul>
 <li>
 <p>Selleks tuleb kasutada käsku <code>/res message alanimi enter/leave tekst</code>, kus enter/leave asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumis teksti kirjutada.</p>
 </li>
@@ -613,7 +644,7 @@ image::Images/Protection/Set.png[Graafiline liides]</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Images/Protection/sisenemistekst.png" alt="Sisenemistekst">
+<img src="images/Protection/sisenemistekst.png" alt="Sisenemistekst">
 </div>
 </div>
 <div class="ulist">
@@ -625,7 +656,7 @@ image::Images/Protection/Set.png[Graafiline liides]</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="Images/Protection/lahkumistekst.png" alt="Lahkumistekst">
+<img src="images/Protection/lahkumistekst.png" alt="Lahkumistekst">
 </div>
 </div>
 </div>
@@ -682,7 +713,7 @@ image::Images/Protection/Set.png[Graafiline liides]</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-02-18 20:50:42 +0200
+Last updated 2023-02-18 22:20:10 +0200
 </div>
 </div>
 </body>
