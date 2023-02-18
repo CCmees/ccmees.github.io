@@ -19,8 +19,11 @@
 * Märgid endale kuidagi ära kui suurt ala tahad. Näiteks 2 diagonaalset posti nagu eelmistes Kännuka versioonides
 * Seejärel võtad kõpla endale kätte, lähed esimese posti juurde, vajutad kõplaga posti peale vasaku hiireklahviga.
 ** Tuleb kinnitus, et said posti valitud
+
 image::images/Protection/pos1.png[Position 1]
+
 ** Suundud teise posti juurde, vajutad kõplaga posti peale parema klikiga
+
 image::images/Protection/pos2.png[Position 2]
 
 
