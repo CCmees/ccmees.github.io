@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.16">
 <title>Õpetused ja reeglid meeskonnale</title>
-<link rel="stylesheet" href="CSS/theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment the following line when using as a custom stylesheet */
@@ -489,13 +489,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2858%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
 </colgroup>
 <tbody>
 <tr>
@@ -505,7 +504,86 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">Parameeter 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nõutav rank</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Seletus</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/infractions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
 <td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Näitab kasutaja karistusregistrit</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/warn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hoiatab kasutajat</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/tempmute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pikkus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ajutiselt vaigistab kasutaja</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/unmute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eemaldab kasutajalt vaigistuse</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/unban</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eemaldab kasutajalt keelu</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/kick</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Viskab kasutaja serverist välja</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/clear</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kustutab antud arvuga sõnumeid selles vestluskanalis.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/slowmode</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lülitab sisse aeglase režiimi antud kanalis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/mute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vaigistab igavesti kasutaja</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/ban</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paneb kasutajale igavese keelu</p></td>
 </tr>
 </tbody>
 </table>
@@ -518,13 +596,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h3 id="_karistamine">Karistamine</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2858%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
 </colgroup>
 <tbody>
 <tr>
@@ -534,61 +611,54 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">Parameeter 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nõutav rank</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Seletus</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/warn</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[blue]=Valvur+=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kasutaja saab hoiatuse, mis püsib aktiivsena 7 päeva. Kui inimesel on korraga 3 aktiivset hoiatust, ja saab neljanda hoiatuse, siis server automaatselt kickib. Järgmisel karistusel tuleb juba 24h blokeering.</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/kick</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[blue]=Valvur+=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Viskab mängija serverist välja</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/tempmute</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Aeg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[blue]=Valvur+=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Vaigistab mängija ajutiselt. Mängija ei saa saata sõnumeid kirjakasti.</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/tempban</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Aeg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[aqua]=Abistaja+=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="aqua">Abistaja+</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Blokeerib mängija ajutiselt serverist.</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/tempbanip</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Aeg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[green]=Mod+=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Blokeerib mängija IP ajutiselt serverist.</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/ban</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kasutajanimi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Põhjus</p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[red]=Admin+=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="red">Admin+</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Blokeerib mängija serverist igaveseks.</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
@@ -597,101 +667,85 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h3 id="_muud_käsklused">Muud käsklused</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Käsu nimi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Informatsioon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nõutav rank</p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vanish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/vanish</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saab minna mängijate eest nähtamatuks</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/silentchest</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saab kirste avada vaikselt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/signspy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kuvab mängijate siltidele kirjutatud sisu</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="blue">Valvur+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/god</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Muutud surematuks. NB! Kasutada võib ainult meeskonnakohustusi täites</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="aqua">Abistaja+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/backpack</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad näha teiste mängijate seljakotte</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="aqua">Abistaja+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/invsee</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad vaadata teiste mängijate seljakotte</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="aqua">Abistaja+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/tp</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad teleporteeruda teiste juurde ilma ajata</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="aqua">Abistaja+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/commandspy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad nähe üksikuid käsklusi, mida mängijad jooksutavad</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/homes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad näha teiste mängijate kodusi ja nendesse teleporteeruda</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/enderchest</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad avada ja muuta teiste mängijate enderchesti</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/tppos (X,Y,Z)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad teleporteeruda kindlatele koordinaatidele</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="green">Mod+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/clear</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kustutab mängija seljakoti sisu</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="red">Admin+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/setwarp</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saad panna warpi (juhend allpool)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="red">Admin+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/invcheck</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="maroon">Vanem-Admin+</span></p></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
@@ -839,7 +893,7 @@ Sellel käsul on samasugused parameetrid, nagu <code>/co rb</code> käsul.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-02-17 22:42:36 +0200
+Last updated 2023-02-18 08:32:05 +0200
 </div>
 </div>
 </body>
