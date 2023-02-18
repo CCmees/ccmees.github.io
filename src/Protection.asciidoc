@@ -6,7 +6,7 @@
 * Alates Kännuka 9.5 versioonist saab Survival serveris iga mängija oma ala ise panna. Sellega kaasnevad mõned muudatused.
 * Peamised muudatused:
 . Nüüdsest hakkavad alad maksma mängusisest raha.
-. Ala maksimum suurus on 275 blocki ühel teljel. Näiteks 275 blocki X koordinaati
+. Ala maksimum suurus on 275 blocki ühel teljel. Näiteks 275 blocki X koordinaati.
 . Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.
 . Mängija saab ise omale ala panna.
 . Mängija saab mitu oma ala _flag_-i muuta.
@@ -18,15 +18,17 @@
 * Ala panemiseks pead endale muretsema puidust kõpla.
 * Märgid endale kuidagi ära kui suurt ala tahad. Näiteks 2 diagonaalset posti nagu eelmistes Kännuka versioonides
 * Seejärel võtad kõpla endale kätte, lähed esimese posti juurde, vajutad kõplaga posti peale vasaku hiireklahviga.
+** Tuleb kinnitus, et said posti valitud
+image::images/Protection/pos1.png[Position 1]
 ** Suundud teise posti juurde, vajutad kõplaga posti peale parema klikiga
+image::images/Protection/pos2.png[Position 2]
 
-image::images/Protection/
 
-** Nagu pildil näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.
+** Nagu piltidelt näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.
 * Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/res create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi.
 ** Näiteks: `/res create CCmees`. Loob mulle privaatse ala nende kahe posti vahel
 
-image::images/Protection/
+image::images/Protection/Create.png[Create]
 
 * Nüüd ongi sinu personaalne ala olemas!
 * Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/res padd alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
