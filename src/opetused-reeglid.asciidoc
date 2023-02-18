@@ -72,12 +72,13 @@
 . Kasuta käsku `/setwarp warpinimi`
 . Seejärel avaneb järgmine menüü
 
-image::Images/Warp1.png[Warp picture]
+image::Images/Opetused/Warp1.png[Warp picture]
+
 
 .. Ikooni muutmiseks peab antud ese olema Sul inventorys. Võtad selle kätte ja vajutad üles paremasse nurka sellega, seal kus asub white carpet.
 . Olen teinud nii, et hoian `/warp` menüüs serveri enda warpe(pood ja vote) esimestena. Et muuta loodud warpi asukohta, selleks vajuta pruuni villa peale, nii nagu pildil kujutatud on.
 
-image::Images/Warp2.png[Warp picture]
+image::Images/Opetused/Warp2.png[Warp picture]
 
 . Ja ongi kõik!
 
@@ -85,13 +86,13 @@ image::Images/Warp2.png[Warp picture]
 
 . Kas sina oled selle warpi pannud? Veenduda saad nii, et kirjutad `/warp`, hõljud hiirega olemasoleva warpi kohal ja tuleb tekst "Klikk rullikule, et muuta" +
 
-image::Images/Warp3.png[Warp change]
+image::Images/Opetused/Warp3.png[Warp change]
 
 . Kui sa oled selle warpi pannud, siis ikooni saab muuta samamoodi nagu alguses sai pandud. 
 . Asukoha muutmiseks tuleb uute asukohta minna, seejärel kas lähed uuesti `/warp` ja vajutad rullikuga, või kirjutad `/editwarp warpinimi`.
 .. Siis pead vajutama hiirega puidust pulga peale.
 
-image::Images/Warp4.png[Warp pos change]
+image::Images/Opetused/Warp4.png[Warp pos change]
 
 
 . Kui sa ei ole seda warpi pannud, siis tuleb olemasolev warp ära kustutada käsuga `/delwarp nimi` ja uuesti warp panna.
