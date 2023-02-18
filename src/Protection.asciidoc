@@ -1,5 +1,6 @@
-= Ala panek Kännuka serveris
+= Kaitseala panemine Kännuka serveris
 :toc:
+:toc-title: Sisukord
 
 == Informatsioon
 * Alates Kännuka 9.5 versioonist saab Survival serveris iga mängija oma ala ise panna. Sellega kaasnevad mõned muudatused.
@@ -18,12 +19,15 @@
 * Märgid endale kuidagi ära kui suurt ala tahad. Näiteks 2 diagonaalset posti nagu eelmistes Kännuka versioonides
 * Seejärel võtad kõpla endale kätte, lähed esimese posti juurde, vajutad kõplaga posti peale vasaku hiireklahviga.
 ** Suundud teise posti juurde, vajutad kõplaga posti peale parema klikiga
-image::Images/Protection/
+
+image::images/Protection/
+
 ** Nagu pildil näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.
 * Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/res create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi.
 ** Näiteks: `/res create CCmees`. Loob mulle privaatse ala nende kahe posti vahel
 
-image::Images/Protection/
+image::images/Protection/
+
 * Nüüd ongi sinu personaalne ala olemas!
 * Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/res padd alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
 * Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/res pdel alanimi inimesenimi`.
@@ -36,34 +40,41 @@ image::Images/Protection/
 * Nagu eelnevalt öeldud, siis nüüd on palju rohkem _flage_, mida saab tavamängija muuta.
 
 === Käsureal _flag_-ide muutmine
+
 * Nimekirja _flag_-idest saad omale silme ette kasutades käsklust `/res flags`. Lehekülgi saab vajutada, kui vajutada hiirega nuppudele "Eelmine" või "Järgmine".
 * Näiteks ma tahan, et minu alas saaksid kõik inimesed kasutada alasid.
 ** Selleks pean alas sees olema ja kasutama käsklust `/res set anvil True`.
 ** Samat _flag_-i saab keelata käsklusega `/res set anvil False`.
 
 === Graafilise liidesega _flag_-ide muutmine
+
 * Selleks pead olema oma alas sees, seejärel kirjutama käsu `/res set`
 * Siis avaneb menüü, kus saad hiirega lugeda, mida iga _flag_ teeb. Kui soovid mingit _flag_-i alal peale panna, siis tuleb hiirega teha vasakklikk selle peale.
-image::Images/Protection/Set.png[Graafiline liides]
+
+image::images/Protection/Set.png[Graafiline liides]
 * Nagu pildil näha on, siis alas helendab nüüd mul. See tähendab seda, et antud _flag_ on nüüd peal ja kõik saavad minu alasit kasutada
+
 === Ala sisenemis- ja lahkumisteksti muutmine
+
 * Selleks tuleb kasutada käsku `/res message alanimi enter/leave tekst`, kus enter/leave asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumis teksti kirjutada.
 * Näiteks, kui ma kasutan käsku `/res message CCmees enter Sisenesite CCmees alale!`, siis ma näen mängus teksti nagu järgneval pildil näha on. +
 
-image::Images/Protection/sisenemistekst.png[Sisenemistekst]
+image::images/Protection/sisenemistekst.png[Sisenemistekst]
 
 * Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/res message CCmees leave Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst.
 
-image::Images/Protection/lahkumistekst.png[Lahkumistekst]
+image::images/Protection/lahkumistekst.png[Lahkumistekst]
 
 
 == Ala suurendamine
+
 * Ala saab suurendada ühe käsuga.
 * Selleks tuleb alas sees olla, vaadata sinna suunas, kuhu sa soovid oma ala suurendada.
 ** Seejärel kirjuta käsk `/res expand amount`, _amount_ asemele tuleb panna blockide arv. 
 ** Ongi ala suurendatud!
 
 === Ala väiksemaks tegemine
+
 * Ala saab sarnaselt teha ka väiksemaks.
 ** Selleks pead samuti vaatam sinna suunas, kust sa soovi ala väiksemaks teha.
 ** Siis kirjutad käsu `/res contract amount`.
