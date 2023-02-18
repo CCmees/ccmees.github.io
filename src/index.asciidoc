@@ -1,5 +1,5 @@
 = Medved's home
 
-* xref:src/opetused-reeglid.asciidoc [Õpetused ja reeglid]
-* xref:src/Protection.asciidoc [Ala panemine]
+* xref:html/opetused-reeglid.html [Õpetused ja reeglid]
+* xref:html/Protection.html [Ala panemine]
 
