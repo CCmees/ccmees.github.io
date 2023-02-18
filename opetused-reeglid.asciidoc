@@ -19,39 +19,50 @@
 == Discordi käsklused
 
 |===
-|Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus|
+|Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus
+|/infractions | Kasutajanimi | | |[blue]#Valvur+#|Näitab kasutaja karistusregistrit
+|/warn | Kasutajanimi | Põhjus | |[blue]#Valvur+#| Hoiatab kasutajat
+| /tempmute | Kasutajanimi | Pikkus | Põhjus|[blue]#Valvur+#| Ajutiselt vaigistab kasutaja
+| /unmute |Kasutajanimi ||| [blue]#Valvur+#| Eemaldab kasutajalt vaigistuse
+|/unban | Kasutajanimi |||[blue]#Valvur+# | Eemaldab kasutajalt keelu
+| /kick | Kasutajanimi |||[blue]#Valvur+# |Viskab kasutaja serverist välja
+| /clear| Number|||[blue]#Valvur+#|Kustutab antud arvuga sõnumeid selles vestluskanalis.
+|/slowmode | |||[green]#Mod+#| Lülitab sisse aeglase režiimi antud kanalis
+| /mute | Kasutajanimi |||[green]#Mod+#| Vaigistab igavesti kasutaja
+| /ban | Kasutajanimi |||[green]#Mod+#| Paneb kasutajale igavese keelu
+
 |===
 
 == Mängusisesed käsklused
 === Karistamine
 |===
-|Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus|
-| /warn | Kasutajanimi | Põhjus | |[blue]=Valvur+=|Kasutaja saab hoiatuse, mis püsib aktiivsena 7 päeva. Kui inimesel on korraga 3 aktiivset hoiatust, ja saab neljanda hoiatuse, siis server automaatselt kickib. Järgmisel karistusel tuleb juba 24h blokeering.|
-| /kick | Kasutajanimi | Põhjus | |[blue]=Valvur+=|Viskab mängija serverist välja|
-| /tempmute| Kasutajanimi | Aeg | Põhjus | [blue]=Valvur+=|Vaigistab mängija ajutiselt. Mängija ei saa saata sõnumeid kirjakasti.|
-| /tempban | Kasutajanimi| Aeg | Põhjus | [aqua]=Abistaja+=|Blokeerib mängija ajutiselt serverist.|
-| /tempbanip | Kasutajanimi| Aeg | Põhjus | [green]=Mod+=|Blokeerib mängija IP ajutiselt serverist.|
-| /ban | Kasutajanimi | Põhjus|| [red]=Admin+=|Blokeerib mängija serverist igaveseks.|
+|Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus
+| /warn | Kasutajanimi | Põhjus | |[blue]#Valvur+#|Kasutaja saab hoiatuse, mis püsib aktiivsena 7 päeva. Kui inimesel on korraga 3 aktiivset hoiatust, ja saab neljanda hoiatuse, siis server automaatselt kickib. Järgmisel karistusel tuleb juba 24h blokeering.
+| /kick | Kasutajanimi | Põhjus | |[blue]#Valvur+#|Viskab mängija serverist välja
+| /tempmute| Kasutajanimi | Aeg | Põhjus | [blue]#Valvur+#|Vaigistab mängija ajutiselt. Mängija ei saa saata sõnumeid kirjakasti.
+| /tempban | Kasutajanimi| Aeg | Põhjus | [aqua]#Abistaja+#|Blokeerib mängija ajutiselt serverist.
+| /tempbanip | Kasutajanimi| Aeg | Põhjus | [green]#Mod+#|Blokeerib mängija IP ajutiselt serverist.
+| /ban | Kasutajanimi | Põhjus|| [red]#Admin+#|Blokeerib mängija serverist igaveseks.
 |===
 
 === Muud käsklused
 
 |===
-|Käsu nimi| Informatsioon|Nõutav rank|
-|vanish | Saab minna mängijate eest nähtamatuks| [blue]#Valvur+#|
-|/silentchest | Saab kirste avada vaikselt | [blue]#Valvur+#|
-|/signspy | Kuvab mängijate siltidele kirjutatud sisu | [blue]#Valvur+#|
-|/god | Muutud surematuks. NB! Kasutada võib ainult meeskonnakohustusi täites |[aqua]#Abistaja+#|
-|/backpack | Saad näha teiste mängijate seljakotte |[aqua]#Abistaja+#|
-|/invsee | Saad vaadata teiste mängijate seljakotte | [aqua]#Abistaja+#|
-|/tp | Saad teleporteeruda teiste juurde ilma ajata | [aqua]#Abistaja+#|
-|/commandspy | Saad nähe üksikuid käsklusi, mida mängijad jooksutavad |[green]#Mod+#|
-|/homes | Saad näha teiste mängijate kodusi ja nendesse teleporteeruda | [green]#Mod+#|
-|/enderchest | Saad avada ja muuta teiste mängijate enderchesti |[green]#Mod+#|
-|/tppos (X,Y,Z)| Saad teleporteeruda kindlatele koordinaatidele| [green]#Mod+#|
-|/clear | Kustutab mängija seljakoti sisu |[red]#Admin+#|
-|/setwarp | Saad panna warpi (juhend allpool)|[red]#Admin+#|
-|/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu|[maroon]#Vanem-Admin+#|
+|Käsu nimi| Informatsioon|Nõutav rank
+|/vanish | Saab minna mängijate eest nähtamatuks| [blue]#Valvur+#
+|/silentchest | Saab kirste avada vaikselt | [blue]#Valvur+#
+|/signspy | Kuvab mängijate siltidele kirjutatud sisu | [blue]#Valvur+#
+|/god | Muutud surematuks. NB! Kasutada võib ainult meeskonnakohustusi täites |[aqua]#Abistaja+#
+|/backpack | Saad näha teiste mängijate seljakotte |[aqua]#Abistaja+#
+|/invsee | Saad vaadata teiste mängijate seljakotte | [aqua]#Abistaja+#
+|/tp | Saad teleporteeruda teiste juurde ilma ajata | [aqua]#Abistaja+#
+|/commandspy | Saad nähe üksikuid käsklusi, mida mängijad jooksutavad |[green]#Mod+#
+|/homes | Saad näha teiste mängijate kodusi ja nendesse teleporteeruda | [green]#Mod+#
+|/enderchest | Saad avada ja muuta teiste mängijate enderchesti |[green]#Mod+#
+|/tppos (X,Y,Z)| Saad teleporteeruda kindlatele koordinaatidele| [green]#Mod+#
+|/clear | Kustutab mängija seljakoti sisu |[red]#Admin+#
+|/setwarp | Saad panna warpi (juhend allpool)|[red]#Admin+#
+|/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu|[maroon]#Vanem-Admin+#
 |===
 
 === Warpi panemise juhend
