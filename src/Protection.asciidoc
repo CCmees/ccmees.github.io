@@ -18,6 +18,7 @@
 * Ala panemiseks pead endale muretsema puidust kõpla.
 * Märgid endale kuidagi ära kui suurt ala tahad. Näiteks 2 diagonaalset posti nagu eelmistes Kännuka versioonides
 * Seejärel võtad kõpla endale kätte, lähed esimese posti juurde, vajutad kõplaga posti peale vasaku hiireklahviga.
+* *NB* Alati võid meeskonna käest abi küsida, kui jääd ala panekuga hätta! Selleks suundu meie discordis #abi-info kanalisse ja ava endale ticket!
 ** Tuleb kinnitus, et said posti valitud
 
 image::images/Protection/pos1.png[Position 1]
@@ -36,6 +37,25 @@ image::images/Protection/Create.png[Create]
 * Nüüd ongi sinu personaalne ala olemas!
 * Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/res padd alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
 * Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/res pdel alanimi inimesenimi`.
+
+== Ala informatsioon
+
+* Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga `/res info alanimi`. Kus "alanimi" asemel paned vastavalt soovitud ala nime
+** Ala infole saad ka ligi, kui kirjutad alas sees olles `/res info`.
+* Seejärel tuleb järgmine info:
+
+image::images/Protection/alainfo.png[Ala info]
+
+* Esimesel real on kirjas ala nimi ja ala omanik.
+* Seejärel on kirjas ala _flag_-id, mis on peale pandud.
+** Näiteks ma aktiveerisin _flag_-i nimega container, mis muutus nüüd samas menüüs roheliseks. See tähendabki seda, et see _flag_ on peale pandud
+
+image::images/Protection/FlagTrue.png[Flag True]
+
+* Kolmandal real on kirjas _flag_-id, mis on kasutajapõhised. Näiteks saab mängijale KarlPro123 määrata teised _flagid_, mida kasutaja krisss18 ei saa kasutada.
+* Neljandal real on ala suurus kirjas. Rohkem informatsiooni saab, kui lähed hiirega selle rea peale.
+
+image::images/Protection/ResInfo.png[Res info]
 
 == Ala _flagid_
 
@@ -85,6 +105,40 @@ image::images/Protection/lahkumistekst.png[Lahkumistekst]
 ** Siis kirjutad käsu `/res contract amount`.
 ** Ongi ala väiksemaks tehtud!
 
+== Poe tegemine
+
+* Poe tegemine käib küll samamoodi, nagu eelmistes versioonides, kuid otsustasin siia juhendi luua, sest paljud ei ole sellega koheselt hakkama saanud.
+
+* Oma personaalse poe tegemiseks on sul vaja ainult kolme asja.
+. Puidust silt
+. Kirst
+. Müüdav ese
+
+* Poe tegemise sammud
+. Pane kirst maha
+. Hoia shifti all ja vajuta parem klikiga kirstu peale *NB* Silt peab olema kirstu küljes, mitte peal ega kõrval
+. Sildi peale kirjuta järgmised andmed
+.. Esimene rida jäta tühjaks
+.. Teisele reale kirjuta mitu eset sa soovid korraga müüa
+.. Kolmandale märgi mis hinnaga sa soovid, et inimesed ostaksid neid
+.. Neljandale pane "?"
+* Kui kirstus on mingid esemed sees, siis muudetakse küsimärk automaatselt müüdavaks esemeks.
+* Kui kirstus ei ole midagi sees, siis tuleb järgnev tekst
+
+image::images/Protection/Pood1.png[Poe tekst]
+
+* Siis tulebki vajutada esemega sildi peale, mida soovid müüa.
+* Ja ongi pood tehtud!
+
+=== Näide
+
+* Kui kirjutada sildile järgnev tekst:
+
+image::images/Protection/Poesilt1.png[Poe silt]
+
+* Siis tehakse selline pood, et inimene ostab korraga 200 eset 90€ eest.
+
+image::images/Protection/Poesilt2.png[Valmis poe silt]
 
 
 
