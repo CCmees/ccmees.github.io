@@ -29,6 +29,9 @@ image::images/Protection/pos2.png[Position 2]
 
 
 ** Nagu piltidelt näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.
+
+image::images/Protection/Maksumus.png[Maksumus]
+
 * Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/res create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi.
 ** Näiteks: `/res create CCmees`. Loob mulle privaatse ala nende kahe posti vahel
 
@@ -90,6 +93,11 @@ image::images/Protection/sisenemistekst.png[Sisenemistekst]
 
 image::images/Protection/lahkumistekst.png[Lahkumistekst]
 
+=== Mängija-spetsiifiline _flagi_ muutmine
+
+* Kui soovid ainult kindlal mängijal flagi muuta, siis seda saab teha käsuga `/res set alanimi mängijanimi flag true/false/remove `
+* Kuhu tuleb siis vastavalt alanimi, mängijanimi ja flagi nimi kirja panna ja kas soovid, et see flag oleks peal(true) või maas(false).
+
 
 == Ala suurendamine
 
@@ -138,7 +146,7 @@ image::images/Protection/Poesilt1.png[Poe silt]
 
 * Siis tehakse selline pood, et inimene ostab korraga 200 eset 90€ eest.
 
-image::images/Protection/Poesilt2.png[Valmis poe silt]
+image::images/Protection/Poesilt2.png[Valmis poe silt,200,100]
 
 
 
