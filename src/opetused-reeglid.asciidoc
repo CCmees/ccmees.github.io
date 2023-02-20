@@ -45,7 +45,7 @@
 | /ban | Kasutajanimi | Põhjus|| [red]#Admin+#|Blokeerib mängija serverist igaveseks.
 |===
 
-=== Muud käsklused
+=== Muud käsud
 
 |===
 |Käsu nimi| Informatsioon|Nõutav rank
@@ -115,6 +115,3 @@ Sellega said kohustuslikud parameetrid otsa, kuid on palju veel, millega saab el
 
 * Infot saab kiiresti otsida käsklusega `/co lookup`
 Sellel käsul on samasugused parameetrid, nagu `/co rb` käsul.
-
-
-
