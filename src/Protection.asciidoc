@@ -84,7 +84,7 @@ image::images/Protection/Set.png[Graafiline liides]
 
 === Ala sisenemis- ja lahkumisteksti muutmine
 
-* Selleks tuleb kasutada käsku `/res message alanimi enter/leave tekst`, kus enter/leave asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumis teksti kirjutada.
+* Selleks tuleb kasutada käsku `/res message alanimi enter/leave tekst`, kus enter/leave asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.
 * Näiteks, kui ma kasutan käsku `/res message CCmees enter Sisenesite CCmees alale!`, siis ma näen mängus teksti nagu järgneval pildil näha on. +
 
 image::images/Protection/sisenemistekst.png[Sisenemistekst]
@@ -112,6 +112,22 @@ image::images/Protection/lahkumistekst.png[Lahkumistekst]
 ** Selleks pead samuti vaatam sinna suunas, kust sa soovi ala väiksemaks teha.
 ** Siis kirjutad käsu `/res contract amount`.
 ** Ongi ala väiksemaks tehtud!
+
+== Alasisene vestlusruum
+
+* Nüüd on võimalik ka rääkida oma alasiseses vestlusruumis!
+* Oma privaatses vestlusruumis rääkimiseks pead kasutama käsku `/res rc alanimi`. 
+** Seal ruumis kirjutatut näevad ainult need, kes on sammuti selles ruumis.
+** Kui kirjutad hetkel vestlusruumis, siis seda eristab teist värvi nimi, kui tavalises.
+* Vestlusruumist lahkumiseks kasuta käsku `/res rc leave`.
+
+== Ala sisse ala tegemine
+
+* Ala sisse ala tegemine käib samamoodi nagu tavalise ala tegemine.
+* Tuleb jälle märkida 2 posti, mis asetsevad ühe ala sees.
+* Siis tuleb rakendada käsku `/res subzone alanimi sisealanimi`
+* Kuhu tuleb siis kirja panna vastavalt ala nimi, mille sisse hakkad ala tegema ja uue ala nimi.
+
 
 == Poe tegemine
 
