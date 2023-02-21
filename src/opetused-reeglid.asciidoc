@@ -1,3 +1,5 @@
+:stylesheet: ../../src/css/dark.css
+
 = Õpetused ja reeglid meeskonnale
 
 == Üldised reeglid
