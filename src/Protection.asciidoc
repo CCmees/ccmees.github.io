@@ -3,6 +3,7 @@
 :toc-title: Sisukord
 
 == Informatsioon
+****
 * Alates Kännuka 9.5 versioonist saab Survival serveris iga mängija oma ala ise panna. Sellega kaasnevad mõned muudatused.
 * Peamised muudatused:
 . Nüüdsest hakkavad alad maksma mängusisest raha.
@@ -11,7 +12,7 @@
 . Mängija saab ise omale ala panna.
 . Mängija saab mitu oma ala _flag_-i muuta.
 . Sisenemistekst ja väljumistekst on automaatselt paika pandud.
-
+****
 
 == Ala panemine
 
