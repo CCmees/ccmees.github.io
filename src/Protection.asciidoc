@@ -1,4 +1,4 @@
-:stylesheet: ../../src/css/dark.css
+:stylesheet: css/dark.css
 
 = Kaitseala panemine Kännuka serveris
 :toc:
