@@ -1,4 +1,4 @@
-:stylesheet: css/dark.css
+:stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
 
 = Kaitseala panemine Kännuka serveris
 :toc:
