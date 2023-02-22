@@ -36,7 +36,8 @@ image::../../src/images/Protection/pos2.png[Position 2]
 
 image::../../src/images/Protection/Maksumus.png[Maksumus]
 
-* Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/res create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi. *NB2* Tungivalt soovituslik oleks oma ala nimeks panna midagi loogilist. Näiteks sinu enda nimi.
+* Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/res create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi. 
+* *NB2* Tungivalt soovituslik oleks oma ala nimeks panna midagi loogilist. Näiteks sinu enda nimi.
 ** Näiteks: `/res create CCmees`. Loob mulle privaatse ala nende kahe posti vahel +
 
 
@@ -108,7 +109,7 @@ image::../../src/images/Protection/lahkumistekst.png[Lahkumistekst]
 
 * Ala saab suurendada ühe käsuga.
 * Selleks tuleb alas sees olla, vaadata sinna suunas, kuhu sa soovid oma ala suurendada.
-** Seejärel kirjuta käsk `/res expand amount`, _amount_ asemele tuleb panna blockide arv. 
+** Seejärel kirjuta käsk `/res expand amount`, _amount_ asemele tuleb panna blockide arv, mitu blocki soovid suurendada. 
 ** Ongi ala suurendatud!
 
 === Ala väiksemaks tegemine
