@@ -14,6 +14,7 @@
 . Mängija saab ise omale ala panna.
 . Mängija saab mitu oma ala _flag_-i muuta.
 . Sisenemistekst ja väljumistekst on automaatselt paika pandud.
+. Oma ala juurde saab  teleporteeruda käsuga `/res tp`
 ****
 
 == Ala panemine
