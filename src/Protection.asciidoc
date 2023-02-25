@@ -3,6 +3,7 @@
 = Kaitseala panemine Kännuka serveris
 :toc: left
 :toc-title: Sisukord
+:icons: font
 
 == 1. Informatsioon
 [.text-left]
@@ -62,7 +63,7 @@ image::../../src/images/Protection/Create.png[Create]
 ** Ala infole saad ka ligi, kui kirjutad alas sees olles `/res info`.
 * Seejärel tuleb järgmine info:
 
-image::../../src/images/Protection/alainfo.png[Ala info,300,200]
+image::../../src/images/Protection/alainfo.png[Ala info,400,300]
 
 * Esimesel real on kirjas ala nimi ja ala omanik.
 * Seejärel on kirjas ala _flag_-id, mis on peale pandud.
@@ -73,7 +74,7 @@ image::../../src/images/Protection/FlagTrue.png[Flag True]
 * Kolmandal real on kirjas _flag_-id, mis on kasutajapõhised. Näiteks saab mängijale KarlPro123 määrata teised _flagid_, mida kasutaja krisss18 ei saa kasutada.
 * Neljandal real on ala suurus kirjas. Rohkem informatsiooni saab, kui lähed hiirega selle rea peale.
 
-image::../../src/images/Protection/ResInfo.png[Res info,300,200]
+image::../../src/images/Protection/ResInfo.png[Res info,400,300]
 ****
 [.text-center]
 == 4. Ala _flagid_

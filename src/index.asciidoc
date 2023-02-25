@@ -1,5 +1,6 @@
+:stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
 = Medved's home
 
-* xref:html/opetused-reeglid.html [Õpetused ja reeglid]
+
 * xref:html/Protection.html [Ala panemine]
 
