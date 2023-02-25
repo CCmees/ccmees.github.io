@@ -1,10 +1,10 @@
 :stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
 
 = Kaitseala panemine Kännuka serveris
-:toc:
+:toc: left
 :toc-title: Sisukord
 
-== Informatsioon
+== 1. Informatsioon
 ****
 * Alates Kännuka 9.5 versioonist saab Survival serveris iga mängija oma ala ise panna. Sellega kaasnevad mõned muudatused.
 * Peamised muudatused:
@@ -17,8 +17,9 @@
 . Oma ala juurde saab  teleporteeruda käsuga `/res tp`
 ****
 
-== Ala panemine
-
+== 2. Ala panemine
+.Ala panemine
+****
 * Ala panemiseks pead endale muretsema puidust kõpla.
 * Märgid endale kuidagi ära kui suurt ala tahad. Näiteks 2 diagonaalset posti nagu eelmistes Kännuka versioonides
 * Seejärel võtad kõpla endale kätte, lähed esimese posti juurde, vajutad kõplaga posti peale vasaku hiireklahviga.
@@ -47,9 +48,10 @@ image::../../src/images/Protection/Create.png[Create]
 * Nüüd ongi sinu personaalne ala olemas!
 * Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/res padd alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
 * Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/res pdel alanimi inimesenimi`.
+****
 
-== Ala informatsioon
-
+== 3. Ala informatsioon
+****
 * Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga `/res info alanimi`. Kus "alanimi" asemel paned vastavalt soovitud ala nime
 ** Ala infole saad ka ligi, kui kirjutad alas sees olles `/res info`.
 * Seejärel tuleb järgmine info:
@@ -66,31 +68,35 @@ image::../../src/images/Protection/FlagTrue.png[Flag True]
 * Neljandal real on ala suurus kirjas. Rohkem informatsiooni saab, kui lähed hiirega selle rea peale.
 
 image::../../src/images/Protection/ResInfo.png[Res info]
+****
 
-== Ala _flagid_
-
+== 4. Ala _flagid_
+****
 * Ala _flage_ saab nüüd muuta kahte viisi
 ** Läbi käsurea
 ** Läbi graafilise liidese
 * Nagu eelnevalt öeldud, siis nüüd on palju rohkem _flage_, mida saab tavamängija muuta.
+****
 
-=== Käsureal _flag_-ide muutmine
-
+== 4.1 Käsureal _flag_-ide muutmine
+****
 * Nimekirja _flag_-idest saad omale silme ette kasutades käsklust `/res flags`. Lehekülgi saab vajutada, kui vajutada hiirega nuppudele "Eelmine" või "Järgmine".
 * Näiteks ma tahan, et minu alas saaksid kõik inimesed kasutada alasid.
 ** Selleks pean alas sees olema ja kasutama käsklust `/res set anvil True`.
 ** Samat _flag_-i saab keelata käsklusega `/res set anvil False`.
+****
 
-=== Graafilise liidesega _flag_-ide muutmine
-
+=== 4.2 Graafilise liidesega _flag_-ide muutmine
+****
 * Selleks pead olema oma alas sees, seejärel kirjutama käsu `/res set`
 * Siis avaneb menüü, kus saad hiirega lugeda, mida iga _flag_ teeb. Kui soovid mingit _flag_-i alal peale panna, siis tuleb hiirega teha vasakklikk selle peale.
 
-image::../../src/images/Protection/Set.png[Graafiline liides]
+image::../../src/images/Protection/Set.png[Graafiline liides,200,100]
 * Nagu pildil näha on, siis alas helendab nüüd mul. See tähendab seda, et antud _flag_ on nüüd peal ja kõik saavad minu alasit kasutada
+****
 
-=== Ala sisenemis- ja lahkumisteksti muutmine
-
+=== 4.3 Ala sisenemis- ja lahkumisteksti muutmine
+****
 * Selleks tuleb kasutada käsku `/res message alanimi enter/leave tekst`, kus enter/leave asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.
 * Näiteks, kui ma kasutan käsku `/res message CCmees enter Sisenesite CCmees alale!`, siis ma näen mängus teksti nagu järgneval pildil näha on. +
 
@@ -99,44 +105,51 @@ image::../../src/images/Protection/sisenemistekst.png[Sisenemistekst]
 * Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/res message CCmees leave Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst: +
 
 image::../../src/images/Protection/lahkumistekst.png[Lahkumistekst]
+****
 
-=== Mängija-spetsiifiline _flagi_ muutmine
-
+=== 4.4 Mängija-spetsiifiline _flagi_ muutmine
+****
 * Kui soovid ainult kindlal mängijal flagi muuta, siis seda saab teha käsuga `/res set alanimi mängijanimi flag true/false/remove`
 * Kuhu tuleb siis vastavalt alanimi, mängijanimi ja flagi nimi kirja panna ja kas soovid, et see flag oleks peal(true) või maas(false).
+****
 
 
-== Ala suurendamine
-
+== 4.5 Ala suurendamine
+****
 * Ala saab suurendada ühe käsuga.
 * Selleks tuleb alas sees olla, vaadata sinna suunas, kuhu sa soovid oma ala suurendada.
 ** Seejärel kirjuta käsk `/res expand amount`, _amount_ asemele tuleb panna blockide arv, mitu blocki soovid suurendada. 
 ** Ongi ala suurendatud!
+****
 
-=== Ala väiksemaks tegemine
-
+=== 4.6 Ala väiksemaks tegemine
+****
 * Ala saab sarnaselt teha ka väiksemaks.
 ** Selleks pead samuti vaatam sinna suunas, kust sa soovi ala väiksemaks teha.
 ** Siis kirjutad käsu `/res contract amount`.
 ** Ongi ala väiksemaks tehtud!
+****
 
-== Alasisene vestlusruum
-
+== 5. Alasisene vestlusruum
+****
 * Nüüd on võimalik ka rääkida oma alasiseses vestlusruumis!
 * Oma privaatses vestlusruumis rääkimiseks pead kasutama käsku `/res rc alanimi`. 
 ** Seal ruumis kirjutatut näevad ainult need, kes on sammuti selles ruumis.
 ** Kui kirjutad hetkel vestlusruumis, siis seda eristab teist värvi nimi, kui tavalises.
 * Vestlusruumist lahkumiseks kasuta käsku `/res rc leave`.
+****
 
-== Ala sisse ala tegemine
-
+== 6. Ala sisse ala tegemine
+****
 * Ala sisse ala tegemine käib samamoodi nagu tavalise ala tegemine.
 * Tuleb jälle märkida 2 posti, mis asetsevad ühe ala sees.
 * Siis tuleb rakendada käsku `/res subzone alanimi sisealanimi`
 * Kuhu tuleb siis kirja panna vastavalt ala nimi, mille sisse hakkad ala tegema ja uue ala nimi.
+****
 
 
-== Poe tegemine
+== 7. Poe tegemine
+****
 
 * Poe tegemine käib küll samamoodi, nagu eelmistes versioonides, kuid otsustasin siia juhendi luua, sest paljud ei ole sellega koheselt hakkama saanud.
 
@@ -160,8 +173,10 @@ image::../../src/images/Protection/Pood1.png[Poe tekst]
 
 * Siis tulebki vajutada esemega sildi peale, mida soovid müüa.
 * Ja ongi pood tehtud!
+****
 
-=== Näide
+=== 7.1 Näide
+****
 
 * Kui kirjutada sildile järgnev tekst:
 
@@ -170,6 +185,7 @@ image::../../src/images/Protection/Poesilt1.png[Poe silt]
 * Siis tehakse selline pood, et inimene ostab korraga 200 eset 90€ eest.
 
 image::../../src/images/Protection/Poesilt2.png[Valmis poe silt,200,100]
+****
 
 
 
