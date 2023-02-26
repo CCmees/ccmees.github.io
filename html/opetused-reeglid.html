@@ -117,15 +117,15 @@ a {
 }
 </style>
 </head>
-<body class="article">
+<body class="article text-center">
 <div id="header">
 <h1>Õpetused ja reeglid meeskonnale</h1>
 </div>
 <div id="content">
-<div class="sect1">
+<div class="sect1 text-center">
 <h2 id="_üldised_reeglid">Üldised reeglid</h2>
 <div class="sectionbody">
-<div class="olist arabic">
+<div class="olist arabic text-left">
 <ol class="arabic">
 <li>
 <p>Kõikide meeskonnavestlusega seotud kanalite sisu leakimine(näitamine/saatmine jne) kõrvalistele isikutele on rangelt keelatud. Kaasaarvatud serverisiseste adminchattide sisud!<br></p>
@@ -164,10 +164,10 @@ a {
 </div>
 </div>
 </div>
-<div class="sect1">
+<div class="sect1 text-center">
 <h2 id="_discordi_käsklused">Discordi käsklused</h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stretch text-left">
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -269,12 +269,12 @@ a {
 </table>
 </div>
 </div>
-<div class="sect1">
+<div class="sect1 text-center">
 <h2 id="_mängusisesed_käsklused">Mängusisesed käsklused</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_karistamine">Karistamine</h3>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stretch text-left">
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -343,9 +343,9 @@ a {
 </tbody>
 </table>
 </div>
-<div class="sect2">
+<div class="sect2 text-center">
 <h3 id="_muud_käsud">Muud käsud</h3>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all stretch text-left">
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -430,9 +430,9 @@ a {
 </tbody>
 </table>
 </div>
-<div class="sect2">
+<div class="sect2 text-center">
 <h3 id="_warpi_panemise_juhend">Warpi panemise juhend</h3>
-<div class="olist arabic">
+<div class="olist arabic text-left">
 <ol class="arabic">
 <li>
 <p>Suundu soovitud koordinaatidele, näiteks käsuga <code>/tppos</code></p>
@@ -480,9 +480,9 @@ a {
 </ul>
 </div>
 </div>
-<div class="sect2">
+<div class="sect2 text-center">
 <h3 id="_warpi_asukoha_ja_ikooni_muutmine">Warpi asukoha ja ikooni muutmine</h3>
-<div class="olist arabic">
+<div class="olist arabic text-left">
 <ol class="arabic">
 <li>
 <p>Kas sina oled selle warpi pannud? Veenduda saad nii, et kirjutad <code>/warp</code>, hõljud hiirega olemasoleva warpi kohal ja tuleb tekst "Klikk rullikule, et muuta"<br></p>
@@ -524,24 +524,16 @@ a {
 </ul>
 </div>
 </div>
-<div class="sect2">
+<div class="sect2 text-center">
 <h3 id="_rollbackimine">Rollbackimine</h3>
-<div class="ulist">
+<div class="ulist text-left">
 <ul>
 <li>
-<p>Rollbackimine on suureks abiks, kui kedagi on griifitud.<br></p>
+<p>Rollbackimine on suureks abiks, kui kedagi on griifitud.<br>
+Rollbackida saab suhteliselt lihtsalt käsuga <code>/co rb</code>.<br>
+Antud käsklus nõuab lisaparameetreid. Nendeks on <code>time:</code>, kuhu tuleb panna kui kaua aega tagasi peab rollbackima. Seejärel ka <code>radius:</code>. Sellega tuleb täpsustada kui suures raadiuses sinust hakatakse rollbackima.<br>
+Sellega said kohustuslikud parameetrid otsa, kuid on palju veel, millega saab elu lihtsamaks teha.</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Rollbackida saab suhteliselt lihtsalt käsuga <code>/co rb</code>.<br>
-Antud käsklus nõuab lisaparameetreid. Nendeks on <code>time:</code>, kuhu tuleb panna kui kaua aega tagasi peab rollbackima. Seejärel ka <code>radius:</code>. Sellega tuleb täpsustada kui suures raadiuses sinust hakatakse rollbackima.<br></p>
-</div>
-<div class="paragraph">
-<p>Sellega said kohustuslikud parameetrid otsa, kuid on palju veel, millega saab elu lihtsamaks teha.</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
 <p><code>user:</code> Selle järel paned kasutajanime ja rollbackitakse ainult tema lõhutud/võetud esemed</p>
 </li>
@@ -552,18 +544,25 @@ Antud käsklus nõuab lisaparameetreid. Nendeks on <code>time:</code>, kuhu tule
 <p><code>exclude:</code> Saab rollbackimisest välja jätta kindlad blockid</p>
 </li>
 <li>
-<p><code>action:</code> Saab rollbackida ainult kindlat tegevust. Näiteks blocki lõhkumist või chestist mingi eseme võtmise.</p>
+<p><code>action:</code> Saab rollbackida ainult kindlat tegevust. Näiteks blocki lõhkumist või chestist mingi eseme võtmise.
+=== Info otsimine</p>
+</li>
+<li>
+<p>Infot saab kiiresti otsida käsklusega <code>/co lookup</code>
+Sellel käsul on samasugused parameetrid, nagu <code>/co rb</code> käsul.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_info_otsimine">Info otsimine</h3>
-<div class="ulist">
+<div class="sect2 text-center">
+<h3 id="_teisele_mängijale_ala_tegemine">Teisele mängijale ala tegemine</h3>
+<div class="ulist text-left">
 <ul>
 <li>
-<p>Infot saab kiiresti otsida käsklusega <code>/co lookup</code>
-Sellel käsul on samasugused parameetrid, nagu <code>/co rb</code> käsul.</p>
+<p>Alguses teed ala tavaliselt, alanimeks pane mängija nimi</p>
+</li>
+<li>
+<p>Seejärel kasutad käsklust <code>/resadmin setowner loodudalanimi mängijanimi</code></p>
 </li>
 </ul>
 </div>
@@ -573,7 +572,7 @@ Sellel käsul on samasugused parameetrid, nagu <code>/co rb</code> käsul.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-02-26 19:02:48 +0200
+Last updated 2023-02-26 20:40:26 +0200
 </div>
 </div>
 </body>
