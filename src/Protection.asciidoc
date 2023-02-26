@@ -40,6 +40,7 @@ image::../../src/images/Protection/pos2.png[Position 2]
 
 
 ** Nagu piltidelt näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.
+** *NB*! Seisuga 26.02 kell 21:00 peab kirjutama praegu ka käsu `/res select vert`, vastasel juhul ei tehta tervet ala y-telje väärtuses. Loodame selle varsti parandada!
 
 image::../../src/images/Protection/Maksumus.png[Maksumus,200,100]
 
