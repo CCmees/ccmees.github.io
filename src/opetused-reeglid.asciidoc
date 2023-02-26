@@ -1,8 +1,12 @@
 :stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
-
+[.text-center]
 = Õpetused ja reeglid meeskonnale
 
+[.text-center]
+
 == Üldised reeglid
+[.text-left]
+
 . Kõikide meeskonnavestlusega seotud kanalite sisu leakimine(näitamine/saatmine jne) kõrvalistele isikutele on rangelt keelatud. Kaasaarvatud serverisiseste adminchattide sisud! +
 
 . Oma privileegide ära kasutamine serveris ning discordis on keelatud!
@@ -17,8 +21,9 @@
 . Pole otseselt reegel, kui keegi hakkab jututoas kellelegi kaebust tegema, siis suuna ta 📌abi-info  kanalisse ja las avab ticketi. Ticketis on parem lahendada seda olukorda. 
 
 
-
+[.text-center]
 == Discordi käsklused
+[.text-left]
 
 |===
 |Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus
@@ -32,11 +37,13 @@
 |/slowmode | |||[green]#Mod+#| Lülitab sisse aeglase režiimi antud kanalis
 | /mute | Kasutajanimi |||[green]#Mod+#| Vaigistab igavesti kasutaja
 | /ban | Kasutajanimi |||[green]#Mod+#| Paneb kasutajale igavese keelu
-
 |===
 
+[.text-center]
 == Mängusisesed käsklused
 === Karistamine
+[.text-left]
+
 |===
 |Käsu nimi| Parameeter 1| Parameeter 2 | Parameeter 3 | Nõutav rank |Seletus
 | /warn | Kasutajanimi | Põhjus | |[blue]#Valvur+#|Kasutaja saab hoiatuse, mis püsib aktiivsena 7 päeva. Kui inimesel on korraga 3 aktiivset hoiatust, ja saab neljanda hoiatuse, siis server automaatselt kickib. Järgmisel karistusel tuleb juba 24h blokeering.
@@ -47,8 +54,9 @@
 | /ban | Kasutajanimi | Põhjus|| [red]#Admin+#|Blokeerib mängija serverist igaveseks.
 |===
 
+[.text-center]
 === Muud käsud
-
+[.text-left]
 |===
 |Käsu nimi| Informatsioon|Nõutav rank
 |/vanish | Saab minna mängijate eest nähtamatuks| [blue]#Valvur+#
@@ -67,15 +75,15 @@
 |/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu|[maroon]#Vanem-Admin+#
 |===
 
+[.text-center]
 === Warpi panemise juhend
-
+[.text-left]
 . Suundu soovitud koordinaatidele, näiteks käsuga `/tppos`
 . Vaata õiges suunas
 . Kasuta käsku `/setwarp warpinimi`
 . Seejärel avaneb järgmine menüü 
 
 image::images/Opetused/Warp1.png[Warp picture]
-
 .. Ikooni muutmiseks peab antud ese olema Sul inventorys. Võtad selle kätte ja vajutad üles paremasse nurka sellega, seal kus asub white carpet.
 . Olen teinud nii, et hoian `/warp` menüüs serveri enda warpe(pood ja vote) esimestena. Et muuta loodud warpi asukohta, selleks vajuta pruuni villa peale, nii nagu pildil kujutatud on. +
 
@@ -83,8 +91,9 @@ image::images/Opetused/Warp2.png[Warp picture]
 
 * Ja ongi kõik!
 
+[.text-center]
 === Warpi asukoha ja ikooni muutmine
-
+[.text-left]
 . Kas sina oled selle warpi pannud? Veenduda saad nii, et kirjutad `/warp`, hõljud hiirega olemasoleva warpi kohal ja tuleb tekst "Klikk rullikule, et muuta" +
 
 image::../../src/images/Opetused/Warp3.png[Warp change]
@@ -95,25 +104,30 @@ image::../../src/images/Opetused/Warp3.png[Warp change]
 
 image::../../src/images/Opetused/Warp4.png[Warp pos change]
 
-
 * Kui sa ei ole seda warpi pannud, siis tuleb olemasolev warp ära kustutada käsuga `/delwarp nimi` ja uuesti warp panna.
 
-
+[.text-center]
 === Rollbackimine
 
+[.text-left]
 * Rollbackimine on suureks abiks, kui kedagi on griifitud. +
-
 Rollbackida saab suhteliselt lihtsalt käsuga `/co rb`. +
 Antud käsklus nõuab lisaparameetreid. Nendeks on `time:`, kuhu tuleb panna kui kaua aega tagasi peab rollbackima. Seejärel ka `radius:`. Sellega tuleb täpsustada kui suures raadiuses sinust hakatakse rollbackima. +
-
 Sellega said kohustuslikud parameetrid otsa, kuid on palju veel, millega saab elu lihtsamaks teha.
-
 * `user:` Selle järel paned kasutajanime ja rollbackitakse ainult tema lõhutud/võetud esemed
 * `include:` Saab rollbackida ainult kindlat blocki
 * `exclude:` Saab rollbackimisest välja jätta kindlad blockid
 * `action:` Saab rollbackida ainult kindlat tegevust. Näiteks blocki lõhkumist või chestist mingi eseme võtmise.
-
+[.text-center]
 === Info otsimine
+[.text-left]
 
 * Infot saab kiiresti otsida käsklusega `/co lookup`
 Sellel käsul on samasugused parameetrid, nagu `/co rb` käsul.
+
+[.text-center]
+=== Teisele mängijale ala tegemine
+[.text-left]
+
+* Alguses teed ala tavaliselt, alanimeks pane mängija nimi
+* Seejärel kasutad käsklust `/resadmin setowner loodudalanimi mängijanimi`
