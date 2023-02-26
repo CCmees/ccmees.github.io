@@ -11,7 +11,7 @@
 * Alates Kännuka 9.5 versioonist saab Survival serveris iga mängija oma ala ise panna. Sellega kaasnevad mõned muudatused.
 * Peamised muudatused:
 . Nüüdsest hakkavad alad maksma mängusisest raha.
-. Ala maksimum suurus on 275 blocki ühel teljel. Näiteks 275 blocki X koordinaati.
+. Ala maksimum suurus on 275 blocki ühel teljel. Näiteks 300 blocki X koordinaati.
 . Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.
 . Mängija saab ise omale ala panna.
 . Mängija saab mitu oma ala _flag_-i muuta.
