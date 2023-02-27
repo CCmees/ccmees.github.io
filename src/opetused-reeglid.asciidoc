@@ -129,5 +129,8 @@ Sellel käsul on samasugused parameetrid, nagu `/co rb` käsul.
 === Teisele mängijale ala tegemine
 [.text-left]
 
-* Alguses teed ala tavaliselt, alanimeks pane mängija nimi
-* Seejärel kasutad käsklust `/resadmin setowner loodudalanimi mängijanimi`
+. Alustad samamoodi nagu tavalise alaga, paned paika 2 posti.
+.. Kui mängijal on ala juba olemas, aga kõrgus on metsas, siis kasuta käsku `/resadmin remove alanimi`, mis kustutab ala ära.
+. Seejärel kasutad käsku `/res select vert`, mis teeb ala terve y-väärtuses.
+. Lood ala käsuga `/resadmin create alanimi` ala nimeks siis mängija nimi.
+. Kasutad käsklust `/resadmin setowner loodudalanimi mängijanimi`, tõstab omaniku staatuse sinult temale.
