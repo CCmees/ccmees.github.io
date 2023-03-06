@@ -1,4 +1,7 @@
 :stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
+:toc: left
+:toc-title: Sisukord
+
 [.text-center]
 = Õpetused ja reeglid meeskonnale
 
@@ -74,6 +77,68 @@
 |/setwarp | Saad panna warpi (juhend allpool)|[red]#Admin+#
 |/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu|[maroon]#Vanem-Admin+#
 |===
+[.text-center]
+== Kohustused
+
+=== 1. [blue]#Valvur#
+[.text-left]
+==== Kohustused:
+* Abistada serveris mängivaid inimesi.
+* Hoida üldist korda nii kirjakastis kui ka mujal, karistamisel lähtuda reeglitest.
+* Õppida kuidas on Kännuka serveris meeskonnatööd teha, et suurematel auastmetel paremini toime tulla.
+* Aktiivsusnõue: Vähemalt 4 tundi nädalas.
+
+=== 2. [aqua]#Abistaja#
+[.text-left]
+==== Kohustused:
+* Abistada serveris mängivaid inimesi.
+* Hoida üldist korda nii kirjakastis kui ka mujal, karistamisel lähtuda reeglitest.
+* Vajaduse korral luua mängijale ala või teha vale kõrgusega alad korda.
+* Aktiivsusnõue: Vähemalt 4 tundi nädalas.
+
+=== 3. [green]#Mod#
+[.text-left]
+==== Kohustused:
+
+* Abistada serveris mängivaid inimesi.
+* Hoida üldist korda nii kirjakastis kui ka mujal, karistamisel lähtuda reeglitest.
+* Vajaduse korral luua mängijale ala või teha vale kõrgusega alad korda.
+* Ja loomulikult olla varasematele auastmetele eeskujuks 😉
+* Aktiivsusnõue: Vähemalt 3 tundi nädalas.
+
+=== 4. [red]#Administraator#
+[.text-left]
+==== Kohustused:
+* Abistada serveris mängivaid inimesi.
+* Hoida üldist korda nii kirjakastis kui ka mujal, karistamisel lähtuda reeglitest.
+* Vajaduse korral luua mängijale ala või teha vale kõrgusega alad korda.
+* Ja loomulikult olla varasematele auastmetele eeskujuks 😉
+* Tegeleda warpide panemisega.
+* Tegeleda ehitiste rollbackimisega.
+* Aktiivsusnõue: Vähemalt 2 tundi nädalas.
+
+=== 5. [red]#Vanem-Administraator#
+[.text-left]
+* Abistada serveris mängivaid inimesi.
+* Hoida üldist korda nii kirjakastis kui ka mujal, karistamisel lähtuda reeglitest.
+* Vajaduse korral luua mängijale ala või teha vale kõrgusega alad korda.
+* Ja loomulikult olla varasematele auastmetele eeskujuks 😉
+* Tegeleda warpide panemisega.
+* Tegeleda ehitiste rollbackimisega.
+* Aktiivsusnõue: Vähemalt 2 tundi nädalas.
+
+=== 6.  [red]#Juht-Administraator#
+[.text-left]
+==== Kohustused:
+* Hoida pilk peal meeskonna tegevustel: juhendada, aidata, korda hoida, meeskonnaliikmeid eemaldada/lisada.
+* Tegeleda mängijate paroolide vahetamisega.
+* Tegeleda mängijate auastmete ümber tõstmisega.
+* Aktiivsusnõue: Peab täitma eelnevaid kohustuste punkte.
+[.text-left]
+==== Õigused:
+* Kõik Vanem Administraatori õigused.
+* Õigused paroole vahetada mängijatel.
+* Õigused ümber tõsta mängijate auastmeid.
 
 [.text-center]
 === Warpi panemise juhend
@@ -108,8 +173,8 @@ image::../../src/images/Opetused/Warp4.png[Warp pos change]
 
 [.text-center]
 === Rollbackimine
-
 [.text-left]
+
 * Rollbackimine on suureks abiks, kui kedagi on griifitud. +
 Rollbackida saab suhteliselt lihtsalt käsuga `/co rb`. +
 Antud käsklus nõuab lisaparameetreid. Nendeks on `time:`, kuhu tuleb panna kui kaua aega tagasi peab rollbackima. Seejärel ka `radius:`. Sellega tuleb täpsustada kui suures raadiuses sinust hakatakse rollbackima. +
