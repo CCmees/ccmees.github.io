@@ -127,7 +127,7 @@ image::../../src/images/Protection/lahkumistekst.png[Lahkumistekst]
 [.text-left]
 
 ****
-* Kui soovid ainult kindlal mängijal flagi muuta, siis seda saab teha käsuga `/res set alanimi mängijanimi flag true/false/remove`
+* Kui soovid ainult kindlal mängijal flagi muuta, siis seda saab teha käsuga `/res pset alanimi mängijanimi flag true/false/remove`
 * Kuhu tuleb siis vastavalt alanimi, mängijanimi ja flagi nimi kirja panna ja kas soovid, et see flag oleks peal(true) või maas(false).
 ****
 
