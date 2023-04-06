@@ -77,6 +77,8 @@
 |/setwarp | Saad panna warpi (juhend allpool)|[red]#Admin+#
 |/invcheck | Saab mängijale taastada tema suremise hetkel olnud seljakoti sisu|[maroon]#Vanem-Admin+#
 |===
+
+
 [.text-center]
 == Kohustused
 
@@ -134,6 +136,7 @@
 * Tegeleda mängijate paroolide vahetamisega.
 * Tegeleda mängijate auastmete ümber tõstmisega.
 * Aktiivsusnõue: Peab täitma eelnevaid kohustuste punkte.
+
 [.text-left]
 ==== Õigused:
 * Kõik Vanem Administraatori õigused.
@@ -159,15 +162,16 @@ image::images/Opetused/Warp2.png[Warp picture]
 [.text-center]
 === Warpi asukoha ja ikooni muutmine
 [.text-left]
+
 . Kas sina oled selle warpi pannud? Veenduda saad nii, et kirjutad `/warp`, hõljud hiirega olemasoleva warpi kohal ja tuleb tekst "Klikk rullikule, et muuta" +
 
-image::../../src/images/Opetused/Warp3.png[Warp change]
+image::images/Opetused/Warp3.png[Warp change]
 
 . Kui sa oled selle warpi pannud, siis ikooni saab muuta samamoodi nagu alguses sai pandud. 
 . Asukoha muutmiseks tuleb uute asukohta minna, seejärel kas lähed uuesti `/warp` ja vajutad rullikuga, või kirjutad `/editwarp warpinimi`.
 .. Siis pead vajutama hiirega puidust pulga peale.
 
-image::../../src/images/Opetused/Warp4.png[Warp pos change]
+image::images/Opetused/Warp4.png[Warp pos change]
 
 * Kui sa ei ole seda warpi pannud, siis tuleb olemasolev warp ära kustutada käsuga `/delwarp nimi` ja uuesti warp panna.
 
@@ -183,6 +187,7 @@ Sellega said kohustuslikud parameetrid otsa, kuid on palju veel, millega saab el
 * `include:` Saab rollbackida ainult kindlat blocki
 * `exclude:` Saab rollbackimisest välja jätta kindlad blockid
 * `action:` Saab rollbackida ainult kindlat tegevust. Näiteks blocki lõhkumist või chestist mingi eseme võtmise.
+
 [.text-center]
 === Info otsimine
 [.text-left]
