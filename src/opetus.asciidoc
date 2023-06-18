@@ -1,0 +1,154 @@
+:stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
+[.text-center]
+= Kaitseala panemine Kännuka serveris
+:toc: left
+:toc-title: Sisukord
+:icons: font
+
+== 1. Informatsioon
+[.text-left]
+****
+* Kännuka versioon 10 juures lähme tagasi eelmisele süsteemile, kuid inimesed saavad endale ala panna.
+* Peamised muudatused:
+. Alad maksavad ikkagi raha
+. Ala maksimum suurus on 350 blocki ühel teljel. Näiteks 350 blocki X koordinaati ja 350 blocki Z koordinaati.
+. Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.
+. Mängija saab ise omale ala panna.
+. Mängija saab mitu oma ala _flag_-i muuta.
+. Sisenemistekst ja väljumistekst on automaatselt paika pandud.
+****
+
+[.text-center]
+== 2. Ala panemine
+[.text-left]
+
+****
+[IMPORTANT] 
+* Ala panemiseks on vaja kasutada ainult käsurida.
+* Selle jaoks pead ära märkima kaks erinevat posti, mille vahele jääks sinu loodud ala.
+* Postide asukohta saab märkida sinu positsiooniga.
+* Esimese posti panekuks kasuta käsku `/claim setpos`.
+** Tuleb kinnitus, et post on valitud:
+image::../../src/images/Protection/pos1.png[Position 1]
+
+** Suundud teise posti juurde, kirjutad uuesti sama käsu:
+
+image::../../src/images/Protection/pos2.png[Position 2]
+
+
+** Nagu piltidelt näha, tuleb vestlusaknasse tekst ka maksumuse kohta, antud summa võetakse sinu kontolt maha
+
+* Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/claim create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi. 
+* *NB2* Tungivalt soovituslik oleks oma ala nimeks panna midagi loogilist. Näiteks sinu enda nimi.
+** Näiteks: `/claim create ccmees`. Loob mulle privaatse ala nende kahe posti vahel +
+
+
+image::../../src/images/Protection/Create.png[Create]
+
+* Nüüd ongi sinu personaalne ala olemas!
+* Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/claim friend invite alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
+* Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/claim friend uninvite alanimi inimesenimi`.
+****
+[.text-center]
+== 3. Ala informatsioon
+[.text-left]
+
+****
+* Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga `/rg i alanimi`. Kus "alanimi" asemel paned vastavalt soovitud ala nime
+** Ala infole saad ka ligi, kui kirjutad alas sees olles `/rg i`.
+* Seejärel tuleb järgmine info:
+
+image::../../src/images/Protection/alainfo.png[Ala info,400,300]
+
+* Esimesel real on kirjas ala nimi.
+* Seejärel on kirjas ala _flag_-id, mis on peale pandud. Ala luues on peal kolm _flag_-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.
+
+****
+
+[.text-center]
+== 4.1 Käsureal _flag_-ide muutmine
+[.text-left]
+
+****
+* Nimekirja _flag_-idest saad omale silme ette kasutades käsklust `/res flags`. Lehekülgi saab vajutada, kui vajutada hiirega nuppudele "Eelmine" või "Järgmine".
+* Näiteks ma tahan, et minu alas saaksid kõik inimesed kasutada alasid.
+** Selleks pean alas sees olema ja kasutama käsklust `/res set anvil True`.
+** Samat _flag_-i saab keelata käsklusega `/res set anvil False`.
+****
+
+****
+[.text-center]
+=== 4.3 Ala sisenemis- ja lahkumisteksti muutmine
+[.text-left]
+
+****
+* Selleks tuleb kasutada käsku `/rg flag alanimi greeting/farewell tekst`, kus greeting/farewell asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.
+* Näiteks, kui ma kasutan käsku `/rg flag ccmees greeting Sisenesite CCmees alale!`, siis ma näen mängus teksti nagu järgneval pildil näha on. +
+
+image::../../src/images/Protection/sisenemistekst.png[Sisenemistekst]
+
+* Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/rg flag ccmees farewell Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst: +
+
+image::../../src/images/Protection/lahkumistekst.png[Lahkumistekst]
+****
+
+
+[.text-center]
+== 4.5 Ala suurendamine
+[.text-left]
+
+****
+* Ala saab suurendada ühe käsuga.
+* Selleks tuleb minna kohta, kuhu soovid oma posti liigutada.
+** Seejärel kirjuta käsk `/claim movecorner alaninmi`
+** Nüüd liigutatakse sinule lähim olev posti sinuni ja ongi ala suurendatud.
+****
+
+
+[.text-center]
+== 7. Poe tegemine
+[.text-left]
+
+****
+
+* Poe tegemine käib küll samamoodi, nagu eelmistes versioonides, kuid otsustasin siia juhendi luua, sest paljud ei ole sellega koheselt hakkama saanud.
+
+* Oma personaalse poe tegemiseks on sul vaja ainult kolme asja.
+. Puidust silt
+. Kirst
+. Müüdav ese
+
+* Poe tegemise sammud
+. Pane kirst maha
+. Hoia shifti all ja vajuta parem klikiga kirstu peale *NB* Silt peab olema kirstu küljes, mitte peal ega kõrval
+. Sildi peale kirjuta järgmised andmed
+.. Esimene rida jäta tühjaks
+.. Teisele reale kirjuta mitu eset sa soovid korraga müüa
+.. Kolmandale märgi mis hinnaga sa soovid, et inimesed ostaksid neid
+.. Neljandale pane "?"
+* Kui kirstus on mingid esemed sees, siis muudetakse küsimärk automaatselt müüdavaks esemeks.
+* Kui kirstus ei ole midagi sees, siis tuleb järgnev tekst
+
+image::../../src/images/Protection/Pood1.png[Poe tekst]
+
+* Siis tulebki vajutada esemega sildi peale, mida soovid müüa.
+* Ja ongi pood tehtud!
+****
+[.text-center]
+=== 7.1 Näide
+[.text-left]
+
+****
+
+* Kui kirjutada sildile järgnev tekst:
+
+image::../../src/images/Protection/Poesilt1.png[Poe silt]
+
+* Siis tehakse selline pood, et inimene ostab korraga 200 eset 90€ eest.
+
+image::../../src/images/Protection/Poesilt2.png[Valmis poe silt,200,100]
+****
+
+
+
+
