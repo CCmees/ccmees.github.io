@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.16">
+<title>Kaitseala panemine Kännuka serveris</title>
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+
+/* CUSTOMISATIONS */
+/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
+:root{
+--maincolor:#282c34;
+--primarycolor:#f39c12;
+--secondarycolor:#03a9f4;
+--tertiarycolor:#4db6ac;
+--sidebarbackground:#21252b;
+--linkcolor:#f44336;
+--linkcoloralternate:#ff9800;
+--white:#FFFFFF;
+}
+
+/* Text styles */
+
+body{font-family: "Noto Sans",sans-serif;background-color: var(--maincolor);color:var(--white);}
+
+h1{color:var(--primarycolor) !important;font-family:"Noto Sans",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Noto Sans",sans-serif;}
+.title{color:var(--white) !important;font-family:"Noto Sans",sans-serif;font-style: normal; font-weight: normal;}
+p{font-family: "Noto Sans",sans-serif ! important}
+#toc.toc2 a:link{color:var(--linkcolor);}
+blockquote{color:var(--tertiarycolor) !important}
+.quoteblock{color:var(--white)}
+code{color:var(--linkcoloralternate);background-color: var(--sidebarbackground) !important}
+
+
+/* Table styles */
+th{background-color: var(--maincolor);color:var(--white) !important;}
+td{background-color: var(--maincolor);color: var(--linkcoloralternate) !important}
+
+
+#toc.toc2{background-color:var(--sidebarbackground);}
+#toctitle{color:var(--white);}
+
+/* Responsiveness fixes */
+video {
+  max-width: 100%;
+}
+
+@media all and (max-width: 600px) {
+  table {
+    width: 55vw!important;
+    font-size: 3vw;
+  }
+}
+
+.exampleblock > .content {
+  background-color: var(--maincolor);
+}
+
+a {
+  color: var(--secondarycolor);
+}
+
+.admonitionblock td.icon .icon-tip::before {
+  text-shadow: none;
+  color: var(--white);
+}
+.admonitionblock td.icon .icon-note::before {
+  color: var(--tertiarycolor);
+}
+.admonitionblock td.icon .icon-important::before {
+  color: var(--linkcolor);
+}
+/*.admonitionblock td.icon .icon-caution::before {
+  color: var(--linkcoloralternate);
+}*/
+.admonitionblock td.icon .icon-warning::before {
+  color: var(--primarycolor);
+}
+
+#preamble > .sectionbody > .paragraph:first-of-type p {
+  color: var(--white);
+}
+
+.quoteblock blockquote::before {
+  color: var(--primarycolor);
+}
+.quoteblock .attribution cite, .verseblock .attribution cite {
+  color: var(--white);
+}
+.verseblock pre {
+  color: var(--white);
+}
+.quoteblock blockquote, .quoteblock blockquote p {
+  color: var(--white);
+}
+
+.sidebarblock {
+  background: var(--sidebarbackground);
+}
+.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {
+  background: var(--sidebarbackground);
+  color: var(--white);
+}
+
+#header .details {
+  color: var(--white);
+}
+#header .details span.email a {
+  color: var(--linkcoloralternate);
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left text-center">
+<div id="header">
+<h1>Kaitseala panemine Kännuka serveris</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Sisukord</div>
+<ul class="sectlevel1">
+<li><a href="#_1_informatsioon">1. Informatsioon</a></li>
+<li><a href="#_2_ala_panemine">2. Ala panemine</a></li>
+<li><a href="#_3_ala_informatsioon">3. Ala informatsioon</a></li>
+<li><a href="#_4_1_käsureal_flag_ide_muutmine">4.1 Käsureal <em>flag</em>-ide muutmine</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_1_informatsioon">1. Informatsioon</h2>
+<div class="sectionbody">
+<div class="sidebarblock text-left">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Kännuka versioon 10 juures lähme tagasi eelmisele süsteemile, kuid inimesed saavad endale ala panna.</p>
+</li>
+<li>
+<p>Peamised muudatused:</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Alad maksavad ikkagi raha</p>
+</li>
+<li>
+<p>Ala maksimum suurus on 350 blocki ühel teljel. Näiteks 350 blocki X koordinaati ja 350 blocki Z koordinaati.</p>
+</li>
+<li>
+<p>Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.</p>
+</li>
+<li>
+<p>Mängija saab ise omale ala panna.</p>
+</li>
+<li>
+<p>Mängija saab mitu oma ala <em>flag</em>-i muuta.</p>
+</li>
+<li>
+<p>Sisenemistekst ja väljumistekst on automaatselt paika pandud.</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 text-center">
+<h2 id="_2_ala_panemine">2. Ala panemine</h2>
+<div class="sectionbody">
+<div class="sidebarblock text-left">
+<div class="content">
+<div class="ulist IMPORTANT">
+<ul class="IMPORTANT">
+<li>
+<p>Ala panemiseks on vaja kasutada ainult käsurida.</p>
+</li>
+<li>
+<p>Selle jaoks pead ära märkima kaks erinevat posti, mille vahele jääks sinu loodud ala.</p>
+</li>
+<li>
+<p>Postide asukohta saab märkida sinu positsiooniga.</p>
+</li>
+<li>
+<p>Esimese posti panekuks kasuta käsku <code>/claim setpos</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Tuleb kinnitus, et post on valitud:
+image::../../src/images/Protection/pos1.png[Position 1]</p>
+</li>
+<li>
+<p>Suundud teise posti juurde, kirjutad uuesti sama käsu:</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/pos2.png" alt="Position 2">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nagu piltidelt näha, tuleb vestlusaknasse tekst ka maksumuse kohta, antud summa võetakse sinu kontolt maha</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: <code>/claim create alanimi</code>. <strong>NB</strong> Alanime asemele kirjuta oma soovitud ala nimi.</p>
+</li>
+<li>
+<p><strong>NB2</strong> Tungivalt soovituslik oleks oma ala nimeks panna midagi loogilist. Näiteks sinu enda nimi.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Näiteks: <code>/claim create ccmees</code>. Loob mulle privaatse ala nende kahe posti vahel<br></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/Create.png" alt="Create">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nüüd ongi sinu personaalne ala olemas!</p>
+</li>
+<li>
+<p>Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust <code>/claim friend invite alanimi inimesenimi</code>, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.</p>
+</li>
+<li>
+<p>Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus <code>/claim friend uninvite alanimi inimesenimi</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 text-center">
+<h2 id="_3_ala_informatsioon">3. Ala informatsioon</h2>
+<div class="sectionbody">
+<div class="sidebarblock text-left">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga <code>/rg i alanimi</code>. Kus "alanimi" asemel paned vastavalt soovitud ala nime</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ala infole saad ka ligi, kui kirjutad alas sees olles <code>/rg i</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Seejärel tuleb järgmine info:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/alainfo.png" alt="Ala info" width="400" height="300">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Esimesel real on kirjas ala nimi.</p>
+</li>
+<li>
+<p>Seejärel on kirjas ala <em>flag</em>-id, mis on peale pandud. Ala luues on peal kolm <em>flag</em>-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 text-center">
+<h2 id="_4_1_käsureal_flag_ide_muutmine">4.1 Käsureal <em>flag</em>-ide muutmine</h2>
+<div class="sectionbody">
+<div class="sidebarblock text-left">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Nimekirja <em>flag</em>-idest saad omale silme ette kasutades käsklust <code>/res flags</code>. Lehekülgi saab vajutada, kui vajutada hiirega nuppudele "Eelmine" või "Järgmine".</p>
+</li>
+<li>
+<p>Näiteks ma tahan, et minu alas saaksid kõik inimesed kasutada alasid.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Selleks pean alas sees olema ja kasutama käsklust <code>/res set anvil True</code>.</p>
+</li>
+<li>
+<p>Samat <em>flag</em>-i saab keelata käsklusega <code>/res set anvil False</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph text-center">
+<p>=== 4.3 Ala sisenemis- ja lahkumisteksti muutmine</p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Selleks tuleb kasutada käsku <code>/rg flag alanimi greeting/farewell tekst</code>, kus greeting/farewell asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.</p>
+</li>
+<li>
+<p>Näiteks, kui ma kasutan käsku <code>/rg flag ccmees greeting Sisenesite CCmees alale!</code>, siis ma näen mängus teksti nagu järgneval pildil näha on.<br></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/sisenemistekst.png" alt="Sisenemistekst">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku <code>/rg flag ccmees farewell Lahkusite CCmehe alalt!</code>, siis mängus kuvatakse järgnev tekst:<br></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/lahkumistekst.png" alt="Lahkumistekst">
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph text-center">
+<p>== 4.5 Ala suurendamine</p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ala saab suurendada ühe käsuga.</p>
+</li>
+<li>
+<p>Selleks tuleb minna kohta, kuhu soovid oma posti liigutada.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Seejärel kirjuta käsk <code>/claim movecorner alaninmi</code></p>
+</li>
+<li>
+<p>Nüüd liigutatakse sinule lähim olev posti sinuni ja ongi ala suurendatud.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph text-center">
+<p>== 7. Poe tegemine</p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Poe tegemine käib küll samamoodi, nagu eelmistes versioonides, kuid otsustasin siia juhendi luua, sest paljud ei ole sellega koheselt hakkama saanud.</p>
+</li>
+<li>
+<p>Oma personaalse poe tegemiseks on sul vaja ainult kolme asja.</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Puidust silt</p>
+</li>
+<li>
+<p>Kirst</p>
+</li>
+<li>
+<p>Müüdav ese</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Poe tegemise sammud</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Pane kirst maha</p>
+</li>
+<li>
+<p>Hoia shifti all ja vajuta parem klikiga kirstu peale <strong>NB</strong> Silt peab olema kirstu küljes, mitte peal ega kõrval</p>
+</li>
+<li>
+<p>Sildi peale kirjuta järgmised andmed</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Esimene rida jäta tühjaks</p>
+</li>
+<li>
+<p>Teisele reale kirjuta mitu eset sa soovid korraga müüa</p>
+</li>
+<li>
+<p>Kolmandale märgi mis hinnaga sa soovid, et inimesed ostaksid neid</p>
+</li>
+<li>
+<p>Neljandale pane "?"</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Kui kirstus on mingid esemed sees, siis muudetakse küsimärk automaatselt müüdavaks esemeks.</p>
+</li>
+<li>
+<p>Kui kirstus ei ole midagi sees, siis tuleb järgnev tekst</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/Pood1.png" alt="Poe tekst">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Siis tulebki vajutada esemega sildi peale, mida soovid müüa.</p>
+</li>
+<li>
+<p>Ja ongi pood tehtud!</p>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph text-center">
+<p>=== 7.1 Näide</p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kui kirjutada sildile järgnev tekst:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/Poesilt1.png" alt="Poe silt">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Siis tehakse selline pood, et inimene ostab korraga 200 eset 90€ eest.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/Poesilt2.png" alt="Valmis poe silt" width="200" height="100">
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2023-06-18 15:42:10 +0300
+</div>
+</div>
+</body>
+</html>
