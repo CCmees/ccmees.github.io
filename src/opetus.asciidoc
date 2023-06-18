@@ -29,6 +29,7 @@
 * Postide asukohta saab märkida sinu positsiooniga.
 * Esimese posti panekuks kasuta käsku `/claim setpos`.
 ** Tuleb kinnitus, et post on valitud:
+
 image::../../src/images/Protection/pos1.png[Position 1]
 
 ** Suundud teise posti juurde, kirjutad uuesti sama käsu:
@@ -49,6 +50,7 @@ image::../../src/images/Protection/Create.png[Create]
 * Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/claim friend invite alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
 * Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/claim friend uninvite alanimi inimesenimi`.
 ****
+
 [.text-center]
 == 3. Ala informatsioon
 [.text-left]
