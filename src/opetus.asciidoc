@@ -8,7 +8,7 @@
 == 1. Informatsioon
 [.text-left]
 ****
-* Kännuka versioon 10 juures lähme tagasi eelmisele süsteemile, kuid inimesed saavad endale ala panna.
+* Kännukas 10.0 juures lähme tagasi eelmisele süsteemile, kuid inimesed saavad endale ala panna.
 * Peamised muudatused:
 . Alad maksavad ikkagi raha
 . Ala maksimum suurus on 350 blocki ühel teljel. Näiteks 350 blocki X koordinaati ja 350 blocki Z koordinaati.
@@ -30,11 +30,11 @@
 * Esimese posti panekuks kasuta käsku `/claim setpos`.
 ** Tuleb kinnitus, et post on valitud:
 
-image::../../src/images/Protection/pos1.png[Position 1]
+image::../../src/images/Protection/pos11.png[Position 1]
 
 ** Suundud teise posti juurde, kirjutad uuesti sama käsu:
 
-image::../../src/images/Protection/pos2.png[Position 2]
+image::../../src/images/Protection/pos21.png[Position 2]
 
 
 ** Nagu piltidelt näha, tuleb vestlusaknasse tekst ka maksumuse kohta, antud summa võetakse sinu kontolt maha
@@ -44,7 +44,7 @@ image::../../src/images/Protection/pos2.png[Position 2]
 ** Näiteks: `/claim create ccmees`. Loob mulle privaatse ala nende kahe posti vahel +
 
 
-image::../../src/images/Protection/Create.png[Create]
+image::../../src/images/Protection/Create1.png[Create]
 
 * Nüüd ongi sinu personaalne ala olemas!
 * Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/claim friend invite alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
@@ -60,7 +60,7 @@ image::../../src/images/Protection/Create.png[Create]
 ** Ala infole saad ka ligi, kui kirjutad alas sees olles `/rg i`.
 * Seejärel tuleb järgmine info:
 
-image::../../src/images/Protection/alainfo.png[Ala info,400,300]
+image::../../src/images/Protection/alainfo1.png[Ala info,400,300]
 
 * Esimesel real on kirjas ala nimi.
 * Seejärel on kirjas ala _flag_-id, mis on peale pandud. Ala luues on peal kolm _flag_-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.
@@ -87,11 +87,11 @@ image::../../src/images/Protection/alainfo.png[Ala info,400,300]
 * Selleks tuleb kasutada käsku `/rg flag alanimi greeting/farewell tekst`, kus greeting/farewell asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.
 * Näiteks, kui ma kasutan käsku `/rg flag ccmees greeting Sisenesite CCmees alale!`, siis ma näen mängus teksti nagu järgneval pildil näha on. +
 
-image::../../src/images/Protection/sisenemistekst.png[Sisenemistekst]
+image::../../src/images/Protection/sisenemistekst1.png[Sisenemistekst]
 
 * Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/rg flag ccmees farewell Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst: +
 
-image::../../src/images/Protection/lahkumistekst.png[Lahkumistekst]
+image::../../src/images/Protection/lahkumistekst1.png[Lahkumistekst]
 ****
 
 
