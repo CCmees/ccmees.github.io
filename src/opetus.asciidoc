@@ -30,7 +30,7 @@
 * Esimese posti panekuks kasuta käsku `/claim setpos`.
 ** Tuleb kinnitus, et post on valitud:
 
-image::../../src/images/Protection/pos11.png[Position 1]
+image::../../src/images/Protection/pos111.png[Position 1]
 
 ** Suundud teise posti juurde, kirjutad uuesti sama käsu:
 
@@ -60,7 +60,7 @@ image::../../src/images/Protection/Create1.png[Create]
 ** Ala infole saad ka ligi, kui kirjutad alas sees olles `/rg i`.
 * Seejärel tuleb järgmine info:
 
-image::../../src/images/Protection/alainfo1.png[Ala info,400,300]
+image::../../src/images/Protection/alainfo1.png[Ala info,400,600]
 
 * Esimesel real on kirjas ala nimi.
 * Seejärel on kirjas ala _flag_-id, mis on peale pandud. Ala luues on peal kolm _flag_-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.
@@ -68,35 +68,7 @@ image::../../src/images/Protection/alainfo1.png[Ala info,400,300]
 ****
 
 [.text-center]
-== 4.1 Käsureal _flag_-ide muutmine
-[.text-left]
-
-****
-* Nimekirja _flag_-idest saad omale silme ette kasutades käsklust `/res flags`. Lehekülgi saab vajutada, kui vajutada hiirega nuppudele "Eelmine" või "Järgmine".
-* Näiteks ma tahan, et minu alas saaksid kõik inimesed kasutada alasid.
-** Selleks pean alas sees olema ja kasutama käsklust `/res set anvil True`.
-** Samat _flag_-i saab keelata käsklusega `/res set anvil False`.
-****
-
-****
-[.text-center]
-=== 4.3 Ala sisenemis- ja lahkumisteksti muutmine
-[.text-left]
-
-****
-* Selleks tuleb kasutada käsku `/rg flag alanimi greeting/farewell tekst`, kus greeting/farewell asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.
-* Näiteks, kui ma kasutan käsku `/rg flag ccmees greeting Sisenesite CCmees alale!`, siis ma näen mängus teksti nagu järgneval pildil näha on. +
-
-image::../../src/images/Protection/sisenemistekst1.png[Sisenemistekst]
-
-* Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/rg flag ccmees farewell Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst: +
-
-image::../../src/images/Protection/lahkumistekst1.png[Lahkumistekst]
-****
-
-
-[.text-center]
-== 4.5 Ala suurendamine
+== 4 Ala suurendamine
 [.text-left]
 
 ****
@@ -108,7 +80,7 @@ image::../../src/images/Protection/lahkumistekst1.png[Lahkumistekst]
 
 
 [.text-center]
-== 7. Poe tegemine
+== 5. Poe tegemine
 [.text-left]
 
 ****
