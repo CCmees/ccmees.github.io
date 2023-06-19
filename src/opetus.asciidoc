@@ -60,7 +60,7 @@ image::../../src/images/Protection/Create1.png[Create]
 ** Ala infole saad ka ligi, kui kirjutad alas sees olles `/rg i`.
 * Seejärel tuleb järgmine info:
 
-image::../../src/images/Protection/alainfo1.png[Ala info,400,600]
+image::../../src/images/Protection/alainfo1.png[Ala info]
 
 * Esimesel real on kirjas ala nimi.
 * Seejärel on kirjas ala _flag_-id, mis on peale pandud. Ala luues on peal kolm _flag_-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.
@@ -109,7 +109,7 @@ image::../../src/images/Protection/Pood1.png[Poe tekst]
 * Ja ongi pood tehtud!
 ****
 [.text-center]
-=== 7.1 Näide
+=== 5.1 Näide
 [.text-left]
 
 ****
