@@ -77,9 +77,30 @@ image::../../src/images/Protection/alainfo1.png[Ala info]
 ** Nüüd liigutatakse sinule lähim olev posti sinuni ja ongi ala suurendatud.
 ****
 
+[.text-center]
+== 5 Flagide muutmine
+[.text-left]
+
+****
+* Mängija saab paari oma flagi muuta.
+* Flagi muutmiseks kasuta käsku `/rg i`, see järel vajuta [Flags] nuppu.
+* Seejärel avaneb menüü, kus on palju valikuid. Valikute muutmiseks pead vajutama kas "Allow" või "Deny" peale.
+
+image::../../src/images/Protection/flags.png[Ala info]
+
+* Flagid, mida saab tavamängija muuta:
+. use
+. anvil-use
+. greeting
+. farewell
+. greeting-title
+. farewell-title
+
+****
+
 
 [.text-center]
-== 5. Poe tegemine
+== 6. Poe tegemine
 [.text-left]
 
 ****
@@ -108,7 +129,7 @@ image::../../src/images/Protection/Pood1.png[Poe tekst]
 * Ja ongi pood tehtud!
 ****
 [.text-center]
-=== 5.1 Näide
+=== 6.1 Näide
 [.text-left]
 
 ****
