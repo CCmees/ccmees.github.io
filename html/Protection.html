@@ -127,24 +127,10 @@ a {
 <li><a href="#_1_informatsioon">1. Informatsioon</a></li>
 <li><a href="#_2_ala_panemine">2. Ala panemine</a></li>
 <li><a href="#_3_ala_informatsioon">3. Ala informatsioon</a></li>
-<li><a href="#_4_ala_flagid">4. Ala <em>flagid</em></a></li>
-<li><a href="#_4_1_käsureal_flag_ide_muutmine">4.1 Käsureal <em>flag</em>-ide muutmine</a>
+<li><a href="#_4_ala_suurendamine">4 Ala suurendamine</a></li>
+<li><a href="#_5_poe_tegemine">5. Poe tegemine</a>
 <ul class="sectlevel2">
-<li><a href="#_4_2_graafilise_liidesega_flag_ide_muutmine">4.2 Graafilise liidesega <em>flag</em>-ide muutmine</a></li>
-<li><a href="#_4_3_ala_sisenemis_ja_lahkumisteksti_muutmine">4.3 Ala sisenemis- ja lahkumisteksti muutmine</a></li>
-<li><a href="#_4_4_mängija_spetsiifiline_flagi_muutmine">4.4 Mängija-spetsiifiline <em>flagi</em> muutmine</a></li>
-</ul>
-</li>
-<li><a href="#_4_5_ala_suurendamine">4.5 Ala suurendamine</a>
-<ul class="sectlevel2">
-<li><a href="#_4_6_ala_väiksemaks_tegemine">4.6 Ala väiksemaks tegemine</a></li>
-</ul>
-</li>
-<li><a href="#_5_alasisene_vestlusruum">5. Alasisene vestlusruum</a></li>
-<li><a href="#_6_ala_sisse_ala_tegemine">6. Ala sisse ala tegemine</a></li>
-<li><a href="#_7_poe_tegemine">7. Poe tegemine</a>
-<ul class="sectlevel2">
-<li><a href="#_7_1_näide">7.1 Näide</a></li>
+<li><a href="#_5_1_näide">5.1 Näide</a></li>
 </ul>
 </li>
 </ul>
@@ -159,14 +145,14 @@ a {
 <div class="ulist">
 <ul>
 <li>
-<p>Alates Kännuka 9.5 versioonist saab Survival serveris iga mängija oma ala ise panna. Sellega kaasnevad mõned muudatused.</p>
+<p>Kännukas 10.0 juures lähme tagasi eelmisele süsteemile, kuid inimesed saavad endale ala panna.</p>
 </li>
 <li>
 <p>Peamised muudatused:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Nüüdsest hakkavad alad maksma mängusisest raha.</p>
+<p>Alad maksavad ikkagi raha</p>
 </li>
 <li>
 <p>Ala maksimum suurus on 350 blocki ühel teljel. Näiteks 350 blocki X koordinaati ja 350 blocki Z koordinaati.</p>
@@ -178,13 +164,7 @@ a {
 <p>Mängija saab ise omale ala panna.</p>
 </li>
 <li>
-<p>Mängija saab mitu oma ala <em>flag</em>-i muuta.</p>
-</li>
-<li>
 <p>Sisenemistekst ja väljumistekst on automaatselt paika pandud.</p>
-</li>
-<li>
-<p>Oma ala juurde saab  teleporteeruda käsuga <code>/res tp</code></p>
 </li>
 </ol>
 </div>
@@ -203,20 +183,20 @@ a {
 <div class="ulist IMPORTANT">
 <ul class="IMPORTANT">
 <li>
-<p>Ala panemiseks pead endale muretsema puidust kõpla.</p>
+<p>Ala panemiseks on vaja kasutada ainult käsurida.</p>
 </li>
 <li>
-<p>Märgid endale kuidagi ära kui suurt ala tahad. Näiteks 2 diagonaalset posti nagu eelmistes Kännuka versioonides</p>
+<p>Selle jaoks pead ära märkima kaks erinevat posti, mille vahele jääks sinu loodud ala.</p>
 </li>
 <li>
-<p>Seejärel võtad kõpla endale kätte, lähed esimese posti juurde, vajutad kõplaga posti peale vasaku hiireklahviga.</p>
+<p>Postide asukohta saab märkida sinu positsiooniga.</p>
 </li>
 <li>
-<p><strong>NB</strong> Alati võid meeskonna käest abi küsida, kui jääd ala panekuga hätta! Selleks suundu meie discordis #abi-info kanalisse ja ava endale ticket!</p>
+<p>Esimese posti panekuks kasuta käsku <code>/claim setpos</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Tuleb kinnitus, et said posti valitud</p>
+<p>Tuleb kinnitus, et post on valitud:</p>
 </li>
 </ul>
 </div>
@@ -225,56 +205,44 @@ a {
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../src/images/Protection/pos1.png" alt="Position 1">
+<img src="../../src/images/Protection/pos111.png" alt="Position 1">
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Suundud teise posti juurde, vajutad kõplaga posti peale parema klikiga</p>
+<p>Suundud teise posti juurde, kirjutad uuesti sama käsu:</p>
 </li>
 </ul>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../src/images/Protection/pos2.png" alt="Position 2">
+<img src="../../src/images/Protection/pos21.png" alt="Position 2">
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Nagu piltidelt näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.</p>
-</li>
-<li>
-<p>Pead kirjutama ka käsu <code>/res select vert</code>, vastasel juhul ei tehta tervet ala y-telje väärtuses.</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../src/images/Protection/Maksumus.png" alt="Maksumus" width="200" height="100">
-</div>
-</div>
+<p>Nagu piltidelt näha, tuleb vestlusaknasse tekst ka maksumuse kohta, antud summa võetakse sinu kontolt maha</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: <code>/res create alanimi</code>. <strong>NB</strong> Alanime asemele kirjuta oma soovitud ala nimi.</p>
+<p>Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: <code>/claim create alanimi</code>. <strong>NB</strong> Alanime asemele kirjuta oma soovitud ala nimi.</p>
 </li>
 <li>
 <p><strong>NB2</strong> Tungivalt soovituslik oleks oma ala nimeks panna midagi loogilist. Näiteks sinu enda nimi.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Näiteks: <code>/res create CCmees</code>. Loob mulle privaatse ala nende kahe posti vahel<br></p>
 </li>
 </ul>
 </div>
+</li>
+<li>
+<p>Näiteks: <code>/claim create ccmees</code>. Loob mulle privaatse ala nende kahe posti vahel<br></p>
 </li>
 </ul>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../src/images/Protection/Create.png" alt="Create">
+<img src="../../src/images/Protection/Create1.png" alt="Create">
 </div>
 </div>
 <div class="ulist">
@@ -283,10 +251,10 @@ a {
 <p>Nüüd ongi sinu personaalne ala olemas!</p>
 </li>
 <li>
-<p>Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust <code>/res padd alanimi inimesenimi</code>, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.</p>
+<p>Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust <code>/claim friend invite alanimi inimesenimi</code>, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.</p>
 </li>
 <li>
-<p>Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus <code>/res pdel alanimi inimesenimi</code>.</p>
+<p>Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus <code>/claim friend uninvite alanimi inimesenimi</code>.</p>
 </li>
 </ul>
 </div>
@@ -302,11 +270,11 @@ a {
 <div class="ulist">
 <ul>
 <li>
-<p>Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga <code>/res info alanimi</code>. Kus "alanimi" asemel paned vastavalt soovitud ala nime</p>
+<p>Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga <code>/rg i alanimi</code>. Kus "alanimi" asemel paned vastavalt soovitud ala nime</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Ala infole saad ka ligi, kui kirjutad alas sees olles <code>/res info</code>.</p>
+<p>Ala infole saad ka ligi, kui kirjutad alas sees olles <code>/rg i</code>.</p>
 </li>
 </ul>
 </div>
@@ -318,72 +286,16 @@ a {
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../src/images/Protection/alainfo.png" alt="Ala info" width="400" height="300">
+<img src="../../src/images/Protection/alainfo1.png" alt="Ala info">
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Esimesel real on kirjas ala nimi ja ala omanik.</p>
+<p>Esimesel real on kirjas ala nimi.</p>
 </li>
 <li>
-<p>Seejärel on kirjas ala <em>flag</em>-id, mis on peale pandud.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Näiteks ma aktiveerisin <em>flag</em>-i nimega container, mis muutus nüüd samas menüüs roheliseks. See tähendabki seda, et see <em>flag</em> on peale pandud</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../src/images/Protection/FlagTrue.png" alt="Flag True">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Kolmandal real on kirjas <em>flag</em>-id, mis on kasutajapõhised. Näiteks saab mängijale KarlPro123 määrata teised <em>flagid</em>, mida kasutaja krisss18 ei saa kasutada.</p>
-</li>
-<li>
-<p>Neljandal real on ala suurus kirjas. Rohkem informatsiooni saab, kui lähed hiirega selle rea peale.</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../src/images/Protection/ResInfo.png" alt="Res info" width="400" height="300">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1 text-center">
-<h2 id="_4_ala_flagid">4. Ala <em>flagid</em></h2>
-<div class="sectionbody">
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Ala <em>flage</em> saab nüüd muuta kahte viisi</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Läbi käsurea</p>
-</li>
-<li>
-<p>Läbi graafilise liidese</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Nagu eelnevalt öeldud, siis nüüd on palju rohkem <em>flage</em>, mida saab tavamängija muuta.</p>
+<p>Seejärel on kirjas ala <em>flag</em>-id, mis on peale pandud. Ala luues on peal kolm <em>flag</em>-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.</p>
 </li>
 </ul>
 </div>
@@ -392,116 +304,7 @@ a {
 </div>
 </div>
 <div class="sect1 text-center">
-<h2 id="_4_1_käsureal_flag_ide_muutmine">4.1 Käsureal <em>flag</em>-ide muutmine</h2>
-<div class="sectionbody">
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Nimekirja <em>flag</em>-idest saad omale silme ette kasutades käsklust <code>/res flags</code>. Lehekülgi saab vajutada, kui vajutada hiirega nuppudele "Eelmine" või "Järgmine".</p>
-</li>
-<li>
-<p>Näiteks ma tahan, et minu alas saaksid kõik inimesed kasutada alasid.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Selleks pean alas sees olema ja kasutama käsklust <code>/res set anvil True</code>.</p>
-</li>
-<li>
-<p>Samat <em>flag</em>-i saab keelata käsklusega <code>/res set anvil False</code>.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2 text-center">
-<h3 id="_4_2_graafilise_liidesega_flag_ide_muutmine">4.2 Graafilise liidesega <em>flag</em>-ide muutmine</h3>
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Selleks pead olema oma alas sees, seejärel kirjutama käsu <code>/res set</code></p>
-</li>
-<li>
-<p>Siis avaneb menüü, kus saad hiirega lugeda, mida iga <em>flag</em> teeb. Kui soovid mingit <em>flag</em>-i alal peale panna, siis tuleb hiirega teha vasakklikk selle peale.</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../src/images/Protection/Set.png" alt="Graafiline liides" width="300" height="200">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Nagu pildil näha on, siis alas helendab nüüd mul. See tähendab seda, et antud <em>flag</em> on nüüd peal ja kõik saavad minu alasit kasutada</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2 text-center">
-<h3 id="_4_3_ala_sisenemis_ja_lahkumisteksti_muutmine">4.3 Ala sisenemis- ja lahkumisteksti muutmine</h3>
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Selleks tuleb kasutada käsku <code>/res message alanimi enter/leave tekst</code>, kus enter/leave asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.</p>
-</li>
-<li>
-<p>Näiteks, kui ma kasutan käsku <code>/res message CCmees enter Sisenesite CCmees alale!</code>, siis ma näen mängus teksti nagu järgneval pildil näha on.<br></p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../src/images/Protection/sisenemistekst.png" alt="Sisenemistekst">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku <code>/res message CCmees leave Lahkusite CCmehe alalt!</code>, siis mängus kuvatakse järgnev tekst:<br></p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../src/images/Protection/lahkumistekst.png" alt="Lahkumistekst">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2 text-center">
-<h3 id="_4_4_mängija_spetsiifiline_flagi_muutmine">4.4 Mängija-spetsiifiline <em>flagi</em> muutmine</h3>
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Kui soovid ainult kindlal mängijal flagi muuta, siis seda saab teha käsuga <code>/res pset alanimi mängijanimi flag true/false/remove</code></p>
-</li>
-<li>
-<p>Kuhu tuleb siis vastavalt alanimi, mängijanimi ja flagi nimi kirja panna ja kas soovid, et see flag oleks peal(true) või maas(false).</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1 text-center">
-<h2 id="_4_5_ala_suurendamine">4.5 Ala suurendamine</h2>
+<h2 id="_4_ala_suurendamine">4 Ala suurendamine</h2>
 <div class="sectionbody">
 <div class="sidebarblock text-left">
 <div class="content">
@@ -511,76 +314,17 @@ a {
 <p>Ala saab suurendada ühe käsuga.</p>
 </li>
 <li>
-<p>Selleks tuleb alas sees olla, vaadata sinna suunas, kuhu sa soovid oma ala suurendada.</p>
+<p>Selleks tuleb minna kohta, kuhu soovid oma posti liigutada.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Seejärel kirjuta käsk <code>/res expand amount</code>, <em>amount</em> asemele tuleb panna blockide arv, mitu blocki soovid suurendada.</p>
+<p>Seejärel kirjuta käsk <code>/claim movecorner alaninmi</code></p>
 </li>
 <li>
-<p>Ongi ala suurendatud!</p>
+<p>Nüüd liigutatakse sinule lähim olev posti sinuni ja ongi ala suurendatud.</p>
 </li>
 </ul>
 </div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2 text-center">
-<h3 id="_4_6_ala_väiksemaks_tegemine">4.6 Ala väiksemaks tegemine</h3>
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Ala saab sarnaselt teha ka väiksemaks.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Selleks pead samuti vaatam sinna suunas, kust sa soovi ala väiksemaks teha.</p>
-</li>
-<li>
-<p>Siis kirjutad käsu <code>/res contract amount</code>.</p>
-</li>
-<li>
-<p>Ongi ala väiksemaks tehtud!</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1 text-center">
-<h2 id="_5_alasisene_vestlusruum">5. Alasisene vestlusruum</h2>
-<div class="sectionbody">
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Nüüd on võimalik ka rääkida oma alasiseses vestlusruumis!</p>
-</li>
-<li>
-<p>Oma privaatses vestlusruumis rääkimiseks pead kasutama käsku <code>/res rc alanimi</code>.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Seal ruumis kirjutatut näevad ainult need, kes on sammuti selles ruumis.</p>
-</li>
-<li>
-<p>Kui kirjutad hetkel vestlusruumis, siis seda eristab teist värvi nimi, kui tavalises.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Vestlusruumist lahkumiseks kasuta käsku <code>/res rc leave</code>.</p>
 </li>
 </ul>
 </div>
@@ -589,32 +333,7 @@ a {
 </div>
 </div>
 <div class="sect1 text-center">
-<h2 id="_6_ala_sisse_ala_tegemine">6. Ala sisse ala tegemine</h2>
-<div class="sectionbody">
-<div class="sidebarblock text-left">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Ala sisse ala tegemine käib samamoodi nagu tavalise ala tegemine.</p>
-</li>
-<li>
-<p>Tuleb jälle märkida 2 posti, mis asetsevad ühe ala sees.</p>
-</li>
-<li>
-<p>Siis tuleb rakendada käsku <code>/res subzone alanimi sisealanimi</code></p>
-</li>
-<li>
-<p>Kuhu tuleb siis kirja panna vastavalt ala nimi, mille sisse hakkad ala tegema ja uue ala nimi.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1 text-center">
-<h2 id="_7_poe_tegemine">7. Poe tegemine</h2>
+<h2 id="_5_poe_tegemine">5. Poe tegemine</h2>
 <div class="sectionbody">
 <div class="sidebarblock text-left">
 <div class="content">
@@ -697,7 +416,7 @@ a {
 </div>
 </div>
 <div class="sect2 text-center">
-<h3 id="_7_1_näide">7.1 Näide</h3>
+<h3 id="_5_1_näide">5.1 Näide</h3>
 <div class="sidebarblock text-left">
 <div class="content">
 <div class="ulist">
@@ -732,7 +451,7 @@ a {
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-18 15:46:59 +0300
+Last updated 2023-06-29 19:33:42 +0300
 </div>
 </div>
 </body>

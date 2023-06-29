@@ -14,7 +14,7 @@
 . Ala maksimum suurus on 350 blocki ühel teljel. Näiteks 350 blocki X koordinaati ja 350 blocki Z koordinaati.
 . Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.
 . Mängija saab ise omale ala panna.
-. Mängija saab mitu oma ala _flag_-i muuta.
+. Kehtivad jälle samad käsklused, /rg i, /rg am jne
 . Sisenemistekst ja väljumistekst on automaatselt paika pandud.
 ****
 

@@ -8,15 +8,13 @@
 == 1. Informatsioon
 [.text-left]
 ****
-* Alates Kännuka 9.5 versioonist saab Survival serveris iga mängija oma ala ise panna. Sellega kaasnevad mõned muudatused.
+* Kännukas 10.0 juures lähme tagasi eelmisele süsteemile, kuid inimesed saavad endale ala panna.
 * Peamised muudatused:
-. Nüüdsest hakkavad alad maksma mängusisest raha.
+. Alad maksavad ikkagi raha
 . Ala maksimum suurus on 350 blocki ühel teljel. Näiteks 350 blocki X koordinaati ja 350 blocki Z koordinaati.
 . Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.
 . Mängija saab ise omale ala panna.
-. Mängija saab mitu oma ala _flag_-i muuta.
 . Sisenemistekst ja väljumistekst on automaatselt paika pandud.
-. Oma ala juurde saab  teleporteeruda käsuga `/res tp`
 ****
 
 [.text-center]
@@ -25,157 +23,63 @@
 
 ****
 [IMPORTANT] 
-* Ala panemiseks pead endale muretsema puidust kõpla.
-* Märgid endale kuidagi ära kui suurt ala tahad. Näiteks 2 diagonaalset posti nagu eelmistes Kännuka versioonides
-* Seejärel võtad kõpla endale kätte, lähed esimese posti juurde, vajutad kõplaga posti peale vasaku hiireklahviga.
-* *NB* Alati võid meeskonna käest abi küsida, kui jääd ala panekuga hätta! Selleks suundu meie discordis #abi-info kanalisse ja ava endale ticket!
-** Tuleb kinnitus, et said posti valitud
+* Ala panemiseks on vaja kasutada ainult käsurida.
+* Selle jaoks pead ära märkima kaks erinevat posti, mille vahele jääks sinu loodud ala.
+* Postide asukohta saab märkida sinu positsiooniga.
+* Esimese posti panekuks kasuta käsku `/claim setpos`.
+** Tuleb kinnitus, et post on valitud:
+
+image::../../src/images/Protection/pos111.png[Position 1]
+
+** Suundud teise posti juurde, kirjutad uuesti sama käsu:
+
+image::../../src/images/Protection/pos21.png[Position 2]
 
 
-image::../../src/images/Protection/pos1.png[Position 1]
+** Nagu piltidelt näha, tuleb vestlusaknasse tekst ka maksumuse kohta, antud summa võetakse sinu kontolt maha
 
-** Suundud teise posti juurde, vajutad kõplaga posti peale parema klikiga
-
-image::../../src/images/Protection/pos2.png[Position 2]
-
-
-** Nagu piltidelt näha, tuleb vestlusaknasse postide koordinaadid. Lisaks kuvab su elude kohal sinu ala pindala ja lisaks kui palju see ala läheb sulle maksma.
-** Pead kirjutama ka käsu `/res select vert`, vastasel juhul ei tehta tervet ala y-telje väärtuses.
-
-image::../../src/images/Protection/Maksumus.png[Maksumus,200,100]
-
-* Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/res create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi. 
+* Nüüd tuleb sul kirjutada vestlusaknasse järgnev tekst: `/claim create alanimi`. *NB* Alanime asemele kirjuta oma soovitud ala nimi. 
 * *NB2* Tungivalt soovituslik oleks oma ala nimeks panna midagi loogilist. Näiteks sinu enda nimi.
-** Näiteks: `/res create CCmees`. Loob mulle privaatse ala nende kahe posti vahel +
+** Näiteks: `/claim create ccmees`. Loob mulle privaatse ala nende kahe posti vahel +
 
 
-image::../../src/images/Protection/Create.png[Create]
+image::../../src/images/Protection/Create1.png[Create]
 
 * Nüüd ongi sinu personaalne ala olemas!
-* Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/res padd alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
-* Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/res pdel alanimi inimesenimi`.
+* Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/claim friend invite alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
+* Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/claim friend uninvite alanimi inimesenimi`.
 ****
+
 [.text-center]
 == 3. Ala informatsioon
 [.text-left]
 
 ****
-* Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga `/res info alanimi`. Kus "alanimi" asemel paned vastavalt soovitud ala nime
-** Ala infole saad ka ligi, kui kirjutad alas sees olles `/res info`.
+* Kui soovid teada rohkem informatsiooni ala kohta, siis seda saab teha käsuga `/rg i alanimi`. Kus "alanimi" asemel paned vastavalt soovitud ala nime
+** Ala infole saad ka ligi, kui kirjutad alas sees olles `/rg i`.
 * Seejärel tuleb järgmine info:
 
-image::../../src/images/Protection/alainfo.png[Ala info,400,300]
+image::../../src/images/Protection/alainfo1.png[Ala info]
 
-* Esimesel real on kirjas ala nimi ja ala omanik.
-* Seejärel on kirjas ala _flag_-id, mis on peale pandud.
-** Näiteks ma aktiveerisin _flag_-i nimega container, mis muutus nüüd samas menüüs roheliseks. See tähendabki seda, et see _flag_ on peale pandud
+* Esimesel real on kirjas ala nimi.
+* Seejärel on kirjas ala _flag_-id, mis on peale pandud. Ala luues on peal kolm _flag_-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.
 
-image::../../src/images/Protection/FlagTrue.png[Flag True]
-
-* Kolmandal real on kirjas _flag_-id, mis on kasutajapõhised. Näiteks saab mängijale KarlPro123 määrata teised _flagid_, mida kasutaja krisss18 ei saa kasutada.
-* Neljandal real on ala suurus kirjas. Rohkem informatsiooni saab, kui lähed hiirega selle rea peale.
-
-image::../../src/images/Protection/ResInfo.png[Res info,400,300]
-****
-[.text-center]
-== 4. Ala _flagid_
-[.text-left]
-
-****
-* Ala _flage_ saab nüüd muuta kahte viisi
-** Läbi käsurea
-** Läbi graafilise liidese
-* Nagu eelnevalt öeldud, siis nüüd on palju rohkem _flage_, mida saab tavamängija muuta.
-****
-[.text-center]
-== 4.1 Käsureal _flag_-ide muutmine
-[.text-left]
-
-****
-* Nimekirja _flag_-idest saad omale silme ette kasutades käsklust `/res flags`. Lehekülgi saab vajutada, kui vajutada hiirega nuppudele "Eelmine" või "Järgmine".
-* Näiteks ma tahan, et minu alas saaksid kõik inimesed kasutada alasid.
-** Selleks pean alas sees olema ja kasutama käsklust `/res set anvil True`.
-** Samat _flag_-i saab keelata käsklusega `/res set anvil False`.
-****
-[.text-center]
-=== 4.2 Graafilise liidesega _flag_-ide muutmine
-[.text-left]
-
-****
-* Selleks pead olema oma alas sees, seejärel kirjutama käsu `/res set`
-* Siis avaneb menüü, kus saad hiirega lugeda, mida iga _flag_ teeb. Kui soovid mingit _flag_-i alal peale panna, siis tuleb hiirega teha vasakklikk selle peale.
-
-image::../../src/images/Protection/Set.png[Graafiline liides,300,200]
-* Nagu pildil näha on, siis alas helendab nüüd mul. See tähendab seda, et antud _flag_ on nüüd peal ja kõik saavad minu alasit kasutada
-****
-[.text-center]
-=== 4.3 Ala sisenemis- ja lahkumisteksti muutmine
-[.text-left]
-
-****
-* Selleks tuleb kasutada käsku `/res message alanimi enter/leave tekst`, kus enter/leave asemele tuleb emb-kumb kirjutada. See oleneb sellest, kas soovid sisenemisteksti või lahkumisteksti kirjutada.
-* Näiteks, kui ma kasutan käsku `/res message CCmees enter Sisenesite CCmees alale!`, siis ma näen mängus teksti nagu järgneval pildil näha on. +
-
-image::../../src/images/Protection/sisenemistekst.png[Sisenemistekst]
-
-* Kui tahaksin oma lahkumisteksti muuta, siis kasutan käsku `/res message CCmees leave Lahkusite CCmehe alalt!`, siis mängus kuvatakse järgnev tekst: +
-
-image::../../src/images/Protection/lahkumistekst.png[Lahkumistekst]
-****
-[.text-center]
-=== 4.4 Mängija-spetsiifiline _flagi_ muutmine
-[.text-left]
-
-****
-* Kui soovid ainult kindlal mängijal flagi muuta, siis seda saab teha käsuga `/res pset alanimi mängijanimi flag true/false/remove`
-* Kuhu tuleb siis vastavalt alanimi, mängijanimi ja flagi nimi kirja panna ja kas soovid, et see flag oleks peal(true) või maas(false).
 ****
 
 [.text-center]
-== 4.5 Ala suurendamine
+== 4 Ala suurendamine
 [.text-left]
 
 ****
 * Ala saab suurendada ühe käsuga.
-* Selleks tuleb alas sees olla, vaadata sinna suunas, kuhu sa soovid oma ala suurendada.
-** Seejärel kirjuta käsk `/res expand amount`, _amount_ asemele tuleb panna blockide arv, mitu blocki soovid suurendada. 
-** Ongi ala suurendatud!
+* Selleks tuleb minna kohta, kuhu soovid oma posti liigutada.
+** Seejärel kirjuta käsk `/claim movecorner alaninmi`
+** Nüüd liigutatakse sinule lähim olev posti sinuni ja ongi ala suurendatud.
 ****
-[.text-center]
-=== 4.6 Ala väiksemaks tegemine
-[.text-left]
 
-****
-* Ala saab sarnaselt teha ka väiksemaks.
-** Selleks pead samuti vaatam sinna suunas, kust sa soovi ala väiksemaks teha.
-** Siis kirjutad käsu `/res contract amount`.
-** Ongi ala väiksemaks tehtud!
-****
-[.text-center]
-== 5. Alasisene vestlusruum
-[.text-left]
-
-****
-* Nüüd on võimalik ka rääkida oma alasiseses vestlusruumis!
-* Oma privaatses vestlusruumis rääkimiseks pead kasutama käsku `/res rc alanimi`. 
-** Seal ruumis kirjutatut näevad ainult need, kes on sammuti selles ruumis.
-** Kui kirjutad hetkel vestlusruumis, siis seda eristab teist värvi nimi, kui tavalises.
-* Vestlusruumist lahkumiseks kasuta käsku `/res rc leave`.
-****
 
 [.text-center]
-== 6. Ala sisse ala tegemine
-[.text-left]
-
-****
-* Ala sisse ala tegemine käib samamoodi nagu tavalise ala tegemine.
-* Tuleb jälle märkida 2 posti, mis asetsevad ühe ala sees.
-* Siis tuleb rakendada käsku `/res subzone alanimi sisealanimi`
-* Kuhu tuleb siis kirja panna vastavalt ala nimi, mille sisse hakkad ala tegema ja uue ala nimi.
-****
-
-[.text-center]
-== 7. Poe tegemine
+== 5. Poe tegemine
 [.text-left]
 
 ****
@@ -204,7 +108,7 @@ image::../../src/images/Protection/Pood1.png[Poe tekst]
 * Ja ongi pood tehtud!
 ****
 [.text-center]
-=== 7.1 Näide
+=== 5.1 Näide
 [.text-left]
 
 ****
