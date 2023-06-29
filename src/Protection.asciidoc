@@ -62,7 +62,7 @@ image::../../src/images/Protection/Create1.png[Create]
 image::../../src/images/Protection/alainfo1.png[Ala info]
 
 * Esimesel real on kirjas ala nimi.
-* Seejärel on kirjas ala _flag_-id, mis on peale pandud. Ala luues on peal kolm _flag_-i, sisenemise tekst, lahkumise tekst ja pvp keelamise tekst.
+* Seejärel on kirjas ala _flag_-id, mis on peale pandud. Ala luues on peal neli _flag_-i, sisenemise tekst, lahkumise tekst, pvp keelatud ja, et mitte alas olijad ei saaks kaubelda sinu külaelanikega.
 
 ****
 
