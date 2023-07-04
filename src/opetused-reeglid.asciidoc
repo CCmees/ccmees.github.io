@@ -200,7 +200,19 @@ Sellel käsul on samasugused parameetrid, nagu `/co rb` käsul.
 [.text-left]
 
 . Alustad samamoodi nagu tavalise alaga, paned paika 2 posti.
-.. Kui mängijal on ala juba olemas, aga kõrgus on metsas, siis kasuta käsku `/resadmin remove alanimi`, mis kustutab ala ära.
-. Seejärel kasutad käsku `/res select vert`, mis teeb ala terve y-väärtuses.
-. Lood ala käsuga `/resadmin create alanimi` ala nimeks siis mängija nimi.
-. Kasutad käsklust `/resadmin setowner loodudalanimi mängijanimi`, tõstab omaniku staatuse sinult temale.
+. Võlud välja maagilise puitkirve käsklusega `//wand`.
+. Vasaku hiireklõpsuga valid ühe posti, parema klõpsuga teise.
+. Järgmisena tuleb `//expand vert`, et saaks valitud postide vahelise ala bedrockist taevani.
+. Kasutades käsklust `/rg define alanimi omanikunimi`, saab ala teostatud.
+. Ülilahe oleks ka paika seada vajalikud flagid `/rg i` -> flags või `/rg flag alanimi flag`.
+.. Flagid, mida aladele pannakse on `greeting`, `farewell` ja `creeper-explosion`.
+
+[.text-center]
+=== Alasisene ala
+[.text-left]
+
+. Alasisese ala loomise protsess on üldiselt sama, mis ala tegemisega.
+. Peale ala definemist, tuleb alas olevale alale anda priority (suurem kui 0).
+.. Selleks kasutame `/rg setpriority alanimi priority`
+
+* Best of luck, kui ei tööta, palun pöörduda perearsti või psühholoogi poole.
