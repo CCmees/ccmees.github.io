@@ -144,6 +144,7 @@ a {
 <li><a href="#_rollbackimine">Rollbackimine</a></li>
 <li><a href="#_info_otsimine">Info otsimine</a></li>
 <li><a href="#_teisele_mängijale_ala_tegemine">Teisele mängijale ala tegemine</a></li>
+<li><a href="#_alasisene_ala">Alasisene ala</a></li>
 </ul>
 </li>
 </ul>
@@ -765,22 +766,55 @@ Sellel käsul on samasugused parameetrid, nagu <code>/co rb</code> käsul.</p>
 <ol class="arabic">
 <li>
 <p>Alustad samamoodi nagu tavalise alaga, paned paika 2 posti.</p>
+</li>
+<li>
+<p>Võlud välja maagilise puitkirve käsklusega <code>//wand</code>.</p>
+</li>
+<li>
+<p>Vasaku hiireklõpsuga valid ühe posti, parema klõpsuga teise.</p>
+</li>
+<li>
+<p>Järgmisena tuleb <code>//expand vert</code>, et saaks valitud postide vahelise ala bedrockist taevani.</p>
+</li>
+<li>
+<p>Kasutades käsklust <code>/rg define alanimi omanikunimi</code>, saab ala teostatud.</p>
+</li>
+<li>
+<p>Ülilahe oleks ka paika seada vajalikud flagid <code>/rg i</code> &#8594; flags või <code>/rg flag alanimi flag</code>.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Kui mängijal on ala juba olemas, aga kõrgus on metsas, siis kasuta käsku <code>/resadmin remove alanimi</code>, mis kustutab ala ära.</p>
+<p>Flagid, mida aladele pannakse on <code>greeting</code>, <code>farewell</code> ja <code>creeper-explosion</code>.</p>
 </li>
 </ol>
 </div>
 </li>
+</ol>
+</div>
+</div>
+<div class="sect2 text-center">
+<h3 id="_alasisene_ala">Alasisene ala</h3>
+<div class="olist arabic text-left">
+<ol class="arabic">
 <li>
-<p>Seejärel kasutad käsku <code>/res select vert</code>, mis teeb ala terve y-väärtuses.</p>
+<p>Alasisese ala loomise protsess on üldiselt sama, mis ala tegemisega.</p>
 </li>
 <li>
-<p>Lood ala käsuga <code>/resadmin create alanimi</code> ala nimeks siis mängija nimi.</p>
-</li>
+<p>Peale ala definemist, tuleb alas olevale alale anda priority (suurem kui 0).</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
-<p>Kasutad käsklust <code>/resadmin setowner loodudalanimi mängijanimi</code>, tõstab omaniku staatuse sinult temale.</p>
+<p>Selleks kasutame <code>/rg setpriority alanimi priority</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Best of luck, kui ei tööta, palun pöörduda perearsti või psühholoogi poole.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
 </li>
 </ol>
 </div>
@@ -790,7 +824,7 @@ Sellel käsul on samasugused parameetrid, nagu <code>/co rb</code> käsul.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-18 15:46:59 +0300
+Last updated 2023-07-04 21:55:42 +0300
 </div>
 </div>
 </body>
