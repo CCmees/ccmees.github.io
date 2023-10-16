@@ -63,6 +63,8 @@
 |===
 |Käsu nimi| Informatsioon|Nõutav rank
 |/vanish | Saab minna mängijate eest nähtamatuks| [blue]#Valvur+#
+|/dupeip | Saab vaadata kas inimesel on alte| [blue]#Valvur+#
+|/history | Saab vaadata inimese eelnevaid karistusi| [blue]#Valvur+#
 |/silentchest | Saab kirste avada vaikselt | [blue]#Valvur+#
 |/signspy | Kuvab mängijate siltidele kirjutatud sisu | [blue]#Valvur+#
 |/god | Muutud surematuks. NB! Kasutada võib ainult meeskonnakohustusi täites |[aqua]#Abistaja+#
