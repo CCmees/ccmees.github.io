@@ -123,6 +123,10 @@ image::../../src/images/Protection/Poesilt1.png[Poe silt]
 image::../../src/images/Protection/Poesilt2.png[Valmis poe silt,200,100]
 ****
 
+[.text-center]
+== 6 Käsklused
+[.text-left]
 
-
+. /voidud - Saad näha palju võite sul on minimängudes
+. /kiirus - Saad näha kes on minimängus olnud kiireim.
 
