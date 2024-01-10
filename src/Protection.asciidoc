@@ -1,4 +1,4 @@
-:stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
+:stylesheet: /home/user/repos/medved-palace.github.io/css/bootstrap.css
 [.text-center]
 = Kaitseala panemine Kännuka serveris
 :toc: left
@@ -49,6 +49,24 @@ image::../../src/images/Protection/Create1.png[Create]
 * Kui soovid ka oma alasse sõpru lisada, siis kasuta selleks käsklust `/claim friend invite alanimi inimesenimi`, kus tuleb siis vastavalt alanimi ja inimesenimi ära vahetada vastavalt sinu ala nimega ja sinu sõbra nimega.
 * Sarnase käsklusega saab ka oma sõpru alast ära eemaldada, selleks on käsklus `/claim friend uninvite alanimi inimesenimi`.
 ****
+
+[.text-center]
+=== 2.1 Ala kustutamine
+[.text-left]
+
+****
+Ala kustutamiseks, tuleb jooksutada ainult ühte lihtsat käsku:  `/claim remove alanimi`
+****
+
+
+[.text-center]
+=== 2.2 Alale teleporteerumine
+[.text-left]
+
+****
+Ala peale saab teleporteeruda käsuga:  `/claim teleport alanimi`. NB! Teleporteerumine maksab raha!
+****
+
 
 [.text-center]
 == 3. Ala informatsioon
@@ -147,5 +165,7 @@ image::../../src/images/Protection/Poesilt2.png[Valmis poe silt,200,100]
 == 7 Käsklused
 [.text-left]
 
-. /voidud - Saad näha palju võite sul on minimängudes
+. /voidud - Saad näha palju võite sul on minimängudes.
 . /kiirus - Saad näha kes on minimängus olnud kiireim.
+. /ilm - Saad vaadata mis aastaaeg praegu on. 
+. /värv - Saad lülitada aastaaja värvid
