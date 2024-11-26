@@ -148,7 +148,7 @@ image::../../src/images/Protection/Pood1.png[Poe tekst]
 * *NB* Kui soovite teha müügikirstu ja ostukirstu, siis kolmanda rea formaat on: "B 2000:5000 S", kus siis 2000 on ostmishind ja 5000 müümishind
 ****
 [.text-center]
-=== 6.2 Müügipoe näide
+=== 6.1 Müügipoe näide
 [.text-left]
 
 ****
