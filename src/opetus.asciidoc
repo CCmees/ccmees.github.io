@@ -1,4 +1,4 @@
-:stylesheet: /home/user/repos/ccmees.github.io/css/dark.css
+:stylesheet: /home/medved/repos/ccmees.github.io/css/dark.css
 [.text-center]
 = Kaitseala panemine Kännuka serveris
 :toc: left
