@@ -1,4 +1,4 @@
-:stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
+:stylesheet: /home/medved/repos/ccmees.github.io/css/dark.css
 :toc: left
 :toc-title: Sisukord
 
