@@ -170,7 +170,7 @@ image::../../src/images/Protection/Poesilt2.png[Valmis poe silt,200,100]
 
 * Kui kirjutada sildile järgnev tekst:
 
-image::../../src/images/Protection/Poesilt3.png[Ostu silt]
+image::../../src/images/Protection/Poesilt3.jpg[Ostu silt]
 
 * Siis tehakse selline pood, et inimene müüb ühe eseme 500€ eest.
 
