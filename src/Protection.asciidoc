@@ -14,6 +14,7 @@
 . Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.
 . Mängija saab ise omale ala panna.
 . Sisenemistekst ja väljumistekst on automaatselt paika pandud.
+
 ****
 
 [.text-center]
