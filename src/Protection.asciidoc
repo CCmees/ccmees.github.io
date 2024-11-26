@@ -1,4 +1,4 @@
-:stylesheet: /home/user/repos/medved-palace.github.io/css/dark.css
+:stylesheet: /home/medved/repos/medved-palace.github.io/css/dark.css
 [.text-center]
 = Kaitseala panemine Kännuka serveris
 :toc: left
@@ -8,8 +8,7 @@
 == 1. Informatsioon
 [.text-left]
 ****
-* Kännukas 11.0-s on kasutusel sama süsteem, mis Kännukas 10.0.
-* Peamised muudatused:
+* Kännukas 12.0-s on kasutusel sama süsteem, mis varasemates Kännuka versioonides
 . Alad maksavad raha.
 . Ala maksimum suurus on 350 blocki ühel teljel. Näiteks 350 blocki X koordinaati ja 350 blocki Z koordinaati.
 . Nagu reeglites kirjas, on jätkuvalt kahe ala miinimum vahe 20 blocki.
@@ -136,7 +135,7 @@ image::../../src/images/Protection/flags.png[Ala info]
 . Sildi peale kirjuta järgmised andmed
 .. Esimene rida jäta tühjaks
 .. Teisele reale kirjuta mitu eset sa soovid korraga müüa
-.. Kolmandale märgi mis hinnaga sa soovid, et inimesed ostaksid neid
+.. Kolmandale märgi mis hinnaga sa soovid, et inimesed ostaksid neid. Või hind, mis hinnaga inimene müüks antud eset. 
 .. Neljandale pane "?"
 * Kui kirstus on mingid esemed sees, siis muudetakse küsimärk automaatselt müüdavaks esemeks.
 * Kui kirstus ei ole midagi sees, siis tuleb järgnev tekst
@@ -145,9 +144,10 @@ image::../../src/images/Protection/Pood1.png[Poe tekst]
 
 * Siis tulebki vajutada esemega sildi peale, mida soovid müüa.
 * Ja ongi pood tehtud!
+* *NB* Kui soovite teha müügikirstu ja ostukirstu, siis kolmanda rea formaat on: "B 2000:5000 S", kus siis 2000 on ostmishind ja 5000 müümishind
 ****
 [.text-center]
-=== 6.1 Näide
+=== 6.2 Müügipoe näide
 [.text-left]
 
 ****
@@ -162,10 +162,23 @@ image::../../src/images/Protection/Poesilt2.png[Valmis poe silt,200,100]
 ****
 
 [.text-center]
+=== 6.2 Ostupoe näide
+[.text-left]
+
+****
+
+* Kui kirjutada sildile järgnev tekst:
+
+image::../../src/images/Protection/Poesilt3.png[Ostu silt]
+
+* Siis tehakse selline pood, et inimene müüb ühe eseme 500€ eest.
+
+****
+
+[.text-center]
 == 7 Käsklused
 [.text-left]
 
 . /voidud - Saad näha palju võite sul on minimängudes.
 . /kiirus - Saad näha kes on minimängus olnud kiireim.
-. /ilm - Saad vaadata mis aastaaeg praegu on. 
-. /värv - Saad lülitada aastaaja värvid
+. /wv - Saad hääletada ilma poolt. *NB!* Donator+ auaste peab olema!

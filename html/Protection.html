@@ -4,117 +4,10 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <title>Kaitseala panemine Kännuka serveris</title>
 <style>
-/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 
-@import url(//fonts.googleapis.com/css?family=Noto+Sans);
-@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
-
-/* CUSTOMISATIONS */
-/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
-:root{
---maincolor:#282c34;
---primarycolor:#f39c12;
---secondarycolor:#03a9f4;
---tertiarycolor:#4db6ac;
---sidebarbackground:#21252b;
---linkcolor:#f44336;
---linkcoloralternate:#ff9800;
---white:#FFFFFF;
-}
-
-/* Text styles */
-
-body{font-family: "Noto Sans",sans-serif;background-color: var(--maincolor);color:var(--white);}
-
-h1{color:var(--primarycolor) !important;font-family:"Noto Sans",sans-serif;}
-h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Noto Sans",sans-serif;}
-.title{color:var(--white) !important;font-family:"Noto Sans",sans-serif;font-style: normal; font-weight: normal;}
-p{font-family: "Noto Sans",sans-serif ! important}
-#toc.toc2 a:link{color:var(--linkcolor);}
-blockquote{color:var(--tertiarycolor) !important}
-.quoteblock{color:var(--white)}
-code{color:var(--linkcoloralternate);background-color: var(--sidebarbackground) !important}
-
-
-/* Table styles */
-th{background-color: var(--maincolor);color:var(--white) !important;}
-td{background-color: var(--maincolor);color: var(--linkcoloralternate) !important}
-
-
-#toc.toc2{background-color:var(--sidebarbackground);}
-#toctitle{color:var(--white);}
-
-/* Responsiveness fixes */
-video {
-  max-width: 100%;
-}
-
-@media all and (max-width: 600px) {
-  table {
-    width: 55vw!important;
-    font-size: 3vw;
-  }
-}
-
-.exampleblock > .content {
-  background-color: var(--maincolor);
-}
-
-a {
-  color: var(--secondarycolor);
-}
-
-.admonitionblock td.icon .icon-tip::before {
-  text-shadow: none;
-  color: var(--white);
-}
-.admonitionblock td.icon .icon-note::before {
-  color: var(--tertiarycolor);
-}
-.admonitionblock td.icon .icon-important::before {
-  color: var(--linkcolor);
-}
-/*.admonitionblock td.icon .icon-caution::before {
-  color: var(--linkcoloralternate);
-}*/
-.admonitionblock td.icon .icon-warning::before {
-  color: var(--primarycolor);
-}
-
-#preamble > .sectionbody > .paragraph:first-of-type p {
-  color: var(--white);
-}
-
-.quoteblock blockquote::before {
-  color: var(--primarycolor);
-}
-.quoteblock .attribution cite, .verseblock .attribution cite {
-  color: var(--white);
-}
-.verseblock pre {
-  color: var(--white);
-}
-.quoteblock blockquote, .quoteblock blockquote p {
-  color: var(--white);
-}
-
-.sidebarblock {
-  background: var(--sidebarbackground);
-}
-.literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint {
-  background: var(--sidebarbackground);
-  color: var(--white);
-}
-
-#header .details {
-  color: var(--white);
-}
-#header .details span.email a {
-  color: var(--linkcoloralternate);
-}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -136,7 +29,8 @@ a {
 <li><a href="#_5_flagide_muutmine">5 Flagide muutmine</a></li>
 <li><a href="#_6_poe_tegemine">6. Poe tegemine</a>
 <ul class="sectlevel2">
-<li><a href="#_6_1_näide">6.1 Näide</a></li>
+<li><a href="#_6_2_müügipoe_näide">6.2 Müügipoe näide</a></li>
+<li><a href="#_6_2_ostupoe_näide">6.2 Ostupoe näide</a></li>
 </ul>
 </li>
 <li><a href="#_7_käsklused">7 Käsklused</a></li>
@@ -152,10 +46,7 @@ a {
 <div class="ulist">
 <ul>
 <li>
-<p>Kännukas 11.0-s on kasutusel sama süsteem, mis Kännukas 10.0.</p>
-</li>
-<li>
-<p>Peamised muudatused:</p>
+<p>Kännukas 12.0-s on kasutusel sama süsteem, mis varasemates Kännuka versioonides</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -462,7 +353,7 @@ a {
 <p>Teisele reale kirjuta mitu eset sa soovid korraga müüa</p>
 </li>
 <li>
-<p>Kolmandale märgi mis hinnaga sa soovid, et inimesed ostaksid neid</p>
+<p>Kolmandale märgi mis hinnaga sa soovid, et inimesed ostaksid neid. Või hind, mis hinnaga inimene müüks antud eset.</p>
 </li>
 <li>
 <p>Neljandale pane "?"</p>
@@ -494,12 +385,15 @@ a {
 <li>
 <p>Ja ongi pood tehtud!</p>
 </li>
+<li>
+<p><strong>NB</strong> Kui soovite teha müügikirstu ja ostukirstu, siis kolmanda rea formaat on: "B 2000:5000 S", kus siis 2000 on ostmishind ja 5000 müümishind</p>
+</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect2 text-center">
-<h3 id="_6_1_näide">6.1 Näide</h3>
+<h3 id="_6_2_müügipoe_näide">6.2 Müügipoe näide</h3>
 <div class="sidebarblock text-left">
 <div class="content">
 <div class="ulist">
@@ -529,6 +423,32 @@ a {
 </div>
 </div>
 </div>
+<div class="sect2 text-center">
+<h3 id="_6_2_ostupoe_näide">6.2 Ostupoe näide</h3>
+<div class="sidebarblock text-left">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Kui kirjutada sildile järgnev tekst:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../src/images/Protection/Poesilt3.png" alt="Ostu silt">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Siis tehakse selline pood, et inimene müüb ühe eseme 500€ eest.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1 text-center">
@@ -543,10 +463,7 @@ a {
 <p>/kiirus - Saad näha kes on minimängus olnud kiireim.</p>
 </li>
 <li>
-<p>/ilm - Saad vaadata mis aastaaeg praegu on.</p>
-</li>
-<li>
-<p>/värv - Saad lülitada aastaaja värvid</p>
+<p>/wv - Saad hääletada ilma poolt. <strong>NB!</strong> Donator+ auaste peab olema!</p>
 </li>
 </ol>
 </div>
@@ -555,7 +472,7 @@ a {
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-10 23:47:43 +0200
+Last updated 2024-11-26 15:41:10 +0200
 </div>
 </div>
 </body>
