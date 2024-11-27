@@ -182,14 +182,19 @@ image::../../src/images/Protection/Poesilt3.jpg[Ostu silt]
 == 7 Käsklused
 [.text-left]
 
+****
+
 . /voidud - Saad näha palju võite sul on minimängudes.
 . /kiirus - Saad näha kes on minimängus olnud kiireim.
 . /wv - Saad hääletada ilma poolt. *NB!* Donator+ auaste peab olema!
 
+****
 
 [.text-center]
 == 8 Kasulikud lingid
 [.text-left]
+
+****
 
 link:https://discord.kannukas.com[Discordiga liitumine]
 
@@ -198,3 +203,5 @@ link:https://annetus.kannukas.com/[Annetamine]
 link:https://stats.kannukas.com/[Statistika]
 
 link:https://rank.kannukas.com/[Rankid]
+
+****
