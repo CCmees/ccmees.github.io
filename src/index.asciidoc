@@ -1,4 +1,4 @@
-:stylesheet: /home/medved/repos/ccmees.github.io/css/dark.css
+:stylesheet: ../css/dark.css
 = Medved's home
 
 
