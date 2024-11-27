@@ -192,6 +192,9 @@ image::../../src/images/Protection/Poesilt3.jpg[Ostu silt]
 [.text-left]
 
 link:https://discord.kannukas.com[Discordiga liitumine]
+
 link:https://annetus.kannukas.com/[Annetamine]
+
 link:https://stats.kannukas.com/[Statistika]
+
 link:https://rank.kannukas.com/[Rankid]
