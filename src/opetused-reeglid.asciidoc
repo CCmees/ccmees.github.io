@@ -218,3 +218,13 @@ Sellel käsul on samasugused parameetrid, nagu `/co rb` käsul.
 .. Selleks kasutame `/rg setpriority alanimi priority`
 
 * Best of luck, kui ei tööta, palun pöörduda perearsti või psühholoogi poole.
+
+
+[.text-center]
+== Kravzile
+[.text-left]
+
+* Mutemise ja bannimise käsku saab teha ka vaikselt(ei teavita teisi mängijaid)
+* Selleks tuleb lisada käsu sisse "-s".
+** Näiteks: `/mute -s kravz`
+** Näiteks: `/tempban -s 14d kravz`
